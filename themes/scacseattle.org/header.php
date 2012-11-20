@@ -46,13 +46,20 @@
 <div id="page" class="hfeed site container">
   <?php do_action( 'before' ); ?>
   <header id="masthead" class="site-header" role="banner">
-    <hgroup class="black-bar">
-      <?php if(is_home()) : ?>
-        <h1 class="site-title"><a href="<?php echo home_url( '/' ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-      <?php else : ?>
-        <h2 class="site-title"><a href="<?php echo home_url( '/' ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h2>
-      <?php endif; ?>
-    </hgroup>
+    <div class="clearfix black-bar">
+      <hgroup class="">
+        <?php if(is_home()) : ?>
+          <h1 class="site-title"><a href="<?php echo home_url( '/' ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
+        <?php else : ?>
+          <h2 class="site-title"><a href="<?php echo home_url( '/' ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h2>
+        <?php endif; ?>
+      </hgroup>
+
+      <div class="social-btns">
+        <a href="#"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/bird_twitter.png" width="40px" height="40px"></a>
+        <a href="#" class="fb-btn"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/fb_logo.png" width="30px" height="30px"></a>
+      </div>
+    </div>
 
     <?php get_template_part("navbar"); ?>
 

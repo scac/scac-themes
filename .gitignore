@@ -1,4 +1,4 @@
 .DS_*
 uploads/*
 upgrade/*
-.sass-cache
+.sass-cache/*

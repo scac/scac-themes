@@ -14,12 +14,12 @@ get_header(); ?>
 
         <div class="info-area">
           <div class="info-row">
-            <div class="info-header">Sunday Service</div>
-            <div class="info-header">Latest Sermon</div>
-            <div class="info-header">Announcements</div>
+            <div class="info-header info-cell">Sunday Service</div>
+            <div class="info-header info-cell">Latest Sermon</div>
+            <div class="info-header info-cell">Announcements</div>
           </div>
           <div class="info-row">
-            <div class="info-box">
+            <div class="info-box info-cell">
               <table>
                 <tr>
                   <td>8:30am</td>
@@ -43,10 +43,10 @@ get_header(); ?>
 
               <a href="#">Directions</a>
             </div>
-            <div class="info-box">
+            <div class="info-box info-cell">
               Coming Soon
             </div>
-            <div class="info-box">
+            <div class="info-box info-cell">
               <?php 
                 $args = array( 'post_type' => 'announcement', 'posts_per_page' => 10 );
                 $loop = new WP_Query( $args );

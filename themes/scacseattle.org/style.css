@@ -9,9 +9,16 @@
  *
  */
 .site-title {
-  font-size: 20px; }
+  font-size: 20px;
+  float: left; }
   .site-title a {
     color: black; }
+
+.social-btns {
+  float: right; }
+  .social-btns .fb-btn {
+    position: relative;
+    top: -3px; }
 
 #primary-nav {
   display: table;
@@ -32,11 +39,36 @@
         text-transform: uppercase;
         color: black; }
 
+.info-area {
+  display: table;
+  width: 100%; }
+  .info-area .info-row {
+    display: table-row;
+    width: 100%; }
+    .info-area .info-row .info-cell {
+      width: 20%;
+      display: table-cell; }
+    .info-area .info-row .info-header {
+      border-bottom: 1px solid #777777;
+      padding: 0 0 15px 10px;
+      text-transform: uppercase; }
+    .info-area .info-row .info-box {
+      padding: 15px 0 0px 10px;
+      display: table-cell; }
+
+.announcement-item {
+  padding: 10px 0;
+  border-bottom: 1px solid #dddddd; }
+  .announcement-item:last-child {
+    border-bottom: none; }
+
 body {
-  font-family: Arial; }
+  font-family: Arial;
+  font-size: 14px; }
 
 a {
-  text-decoration: none; }
+  text-decoration: none;
+  color: #77991f; }
   a:hover {
     text-decoration: underline; }
 
