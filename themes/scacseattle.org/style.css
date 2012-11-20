@@ -8,3 +8,44 @@
  * Nom nom nom nom
  *
  */
+.site-title {
+  font-size: 20px; }
+  .site-title a {
+    color: black; }
+
+#primary-nav {
+  display: table;
+  width: 100%; }
+  #primary-nav .navbar {
+    padding: 0 0 20px 0px;
+    display: table-row;
+    width: 100%; }
+    #primary-nav .navbar .nav-item {
+      display: table-cell;
+      width: 20%;
+      position: relative;
+      padding: 20px;
+      text-align: center; }
+      #primary-nav .navbar .nav-item a {
+        padding: 20px 40px;
+        margin: 0 4%;
+        text-transform: uppercase;
+        color: black; }
+
+body {
+  font-family: Arial; }
+
+a {
+  text-decoration: none; }
+  a:hover {
+    text-decoration: underline; }
+
+.container {
+  width: 980px;
+  margin: 0 auto; }
+
+.clearfix {
+  overflow: hidden; }
+
+.black-bar {
+  border-bottom: 1px solid #222222; }
