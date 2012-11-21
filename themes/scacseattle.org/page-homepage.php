@@ -9,7 +9,8 @@ get_header(); ?>
       <div id="content" class="site-content" role="main">
         
         <!-- Place holder img !-->
-        <div style="width: 100%; height: 300px; background-color: #DEDEDE; margin: 20px auto;">
+        <div class="main-carousel">
+          <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/church.jpg" height="300px" width="100%">
         </div>
 
         <div class="info-area">

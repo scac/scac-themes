@@ -8,6 +8,9 @@
  * Nom nom nom nom
  *
  */
+.site-header {
+  margin: 15px 0 0 0; }
+
 .site-title {
   font-size: 20px;
   float: left; }
@@ -22,7 +25,8 @@
 
 #primary-nav {
   display: table;
-  width: 100%; }
+  width: 100%;
+  margin: 10px 0 30px; }
   #primary-nav .navbar {
     padding: 0 0 20px 0px;
     display: table-row;
@@ -32,16 +36,19 @@
       width: 20%;
       position: relative;
       padding: 20px;
-      text-align: center; }
+      text-align: center;
+      border-top: 1px solid #222222; }
       #primary-nav .navbar .nav-item a {
         padding: 20px 40px;
         margin: 0 4%;
         text-transform: uppercase;
-        color: black; }
+        color: black;
+        font-size: 16px; }
 
 .info-area {
   display: table;
-  width: 100%; }
+  width: 100%;
+  margin: 40px 0 45px; }
   .info-area .info-row {
     display: table-row;
     width: 100%; }
@@ -62,9 +69,22 @@
   .announcement-item:last-child {
     border-bottom: none; }
 
+.site-footer {
+  background: url("images/footer_bg.png") repeat top left;
+  width: 100%;
+  padding: 0 0 100px 0;
+  margin: 20px 0 0 0; }
+
+.copyright {
+  color: #dddddd;
+  font-size: 10px;
+  margin: 15px 0 0 10px;
+  float: left; }
+
 body {
   font-family: Arial;
-  font-size: 14px; }
+  font-size: 14px;
+  margin: 0px; }
 
 a {
   text-decoration: none;
@@ -81,3 +101,7 @@ a {
 
 .black-bar {
   border-bottom: 1px solid #222222; }
+
+table, tr, td {
+  border-spacing: 0;
+  border-collapse: collapse; }

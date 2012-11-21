@@ -46,7 +46,7 @@
 <div id="page" class="hfeed site container">
   <?php do_action( 'before' ); ?>
   <header id="masthead" class="site-header" role="banner">
-    <div class="clearfix black-bar">
+    <div class="clearfix">
       <hgroup class="">
         <?php if(is_home()) : ?>
           <h1 class="site-title"><a href="<?php echo home_url( '/' ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
