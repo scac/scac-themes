@@ -48,7 +48,7 @@ get_header(); ?>
                 Seattle, WA 98108
               </p>
 
-              <a href="#">Directions</a>
+              <a href="<?php echo home_url("/")?>/visit/">Directions</a>
             </div>
             <div class="info-box info-cell">
               Coming Soon
