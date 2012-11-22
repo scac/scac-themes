@@ -55,9 +55,12 @@
         <?php endif; ?>
       </hgroup>
 
-      <div class="social-btns">
-        <a href="#"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/bird_twitter.png" width="40px" height="40px"></a>
-        <a href="#" class="fb-btn"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/fb_logo.png" width="30px" height="30px"></a>
+      <div class="site-search">
+        <form method="get" id="searchform" action="<?php bloginfo('home'); ?>/">
+          <div><input type="text" size="25" value="Search" name="s" id="s" />
+          <button type="submit" id="searchsubmit" value="Search" class="btn" />
+          </div>
+        </form>
       </div>
     </div>
 

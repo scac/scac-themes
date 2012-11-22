@@ -15,9 +15,15 @@ get_header(); ?>
 
         <div class="info-area">
           <div class="info-row">
-            <div class="info-header info-cell">Sunday Service</div>
-            <div class="info-header info-cell">Latest Sermon</div>
-            <div class="info-header info-cell">Announcements</div>
+            <div class="info-header info-cell">
+              <div class="header">Sunday Service</div>
+            </div>
+            <div class="info-header info-cell">
+              <div class="header">Latest Sermon</div>
+            </div>
+            <div class="info-header info-cell">
+              <div class="header">Announcements</div>
+            </div>
           </div>
           <div class="info-row">
             <div class="info-box info-cell">

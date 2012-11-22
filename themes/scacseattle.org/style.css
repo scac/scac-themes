@@ -17,6 +17,24 @@
   .site-title a {
     color: black; }
 
+.site-search {
+  margin: 10px 0 0 0;
+  float: right;
+  background: #efefef;
+  -webkit-border-radius: 6px 6px;
+  -moz-border-radius: 1;
+  -khtml-border-radius: 1;
+  border-radius: 1; }
+  .site-search div #s {
+    color: #aaaaaa;
+    font-size: 14px;
+    background: #efefef;
+    border: 0;
+    padding: 7px 15px; }
+  .site-search div #searchsubmit {
+    border: 0px;
+    background: #efefef; }
+
 #primary-nav {
   display: table;
   width: 100%;
@@ -42,6 +60,7 @@
           color: #aaaaaa; }
 
 .site-footer {
+  position: relative;
   background: #eceded;
   width: 100%;
   padding: 0 0 100px 0;
@@ -54,7 +73,9 @@
   float: left; }
 
 .social-btns {
-  float: right; }
+  position: absolute;
+  right: 30px;
+  top: 20px; }
   .social-btns .fb-btn {
     position: relative;
     top: -3px; }
@@ -70,15 +91,20 @@
       width: 20%;
       display: table-cell; }
     .info-area .info-row .info-header {
-      border-bottom: 1px solid #777777;
-      padding: 0 0 15px 10px;
       text-transform: uppercase;
       font-size: 16px; }
+      .info-area .info-row .info-header .header {
+        padding: 0 0 15px 0px;
+        border-bottom: 3px solid #999999;
+        width: 90%; }
+      .info-area .info-row .info-header:last-child .header {
+        width: 100%; }
     .info-area .info-row .info-box {
-      padding: 15px 0 0px 10px;
+      padding: 15px 0 0px 0px;
       display: table-cell; }
 
 .announcement-item {
+  width: 100%;
   padding: 10px 0;
   border-bottom: 1px solid #dddddd; }
   .announcement-item:last-child {
