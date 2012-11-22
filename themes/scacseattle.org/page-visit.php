@@ -6,7 +6,7 @@ Template Name: Page - Visit
 get_header(); ?>
 
     <div id="primary" class="content-area">
-      <div id="content" class="site-content" role="main">
+      <div id="content" class="site-content clearfix" role="main">
         
         <!-- Place holder img !-->
 		<h1>Contact &amp; Directions</h1>
