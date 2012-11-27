@@ -10,7 +10,7 @@ get_header(); ?>
         
         <!-- Place holder img !-->
         <div class="main-carousel">
-          <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/church.jpg" height="300px" width="100%">
+          <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/morethanstory11.jpg" height="300px" width="100%">
         </div>
 
         <div class="info-area">
@@ -43,12 +43,12 @@ get_header(); ?>
               </table>
 
               <p>
-                2308 Orcas St.
+                2803 S. Orcas St.
                 <br/>
                 Seattle, WA 98108
               </p>
 
-              <a href="#">Directions</a>
+              <a href="<?php echo home_url("/")?>/visit/">Directions</a>
             </div>
             <div class="info-box info-cell">
               Coming Soon
@@ -57,7 +57,8 @@ get_header(); ?>
               <?php 
                 $args = array( 'post_type' => 'announcement', 'posts_per_page' => 10 );
                 $loop = new WP_Query( $args );
-                while ( $loop->have_posts() ) : $loop->the_post();
+                if($loop->have_posts()) : 
+                  while ( $loop->have_posts() ) : $loop->the_post();
               ?>
               <div class="announcement-item">
                 <span class="date"><?php the_time("n/d"); ?></span>
@@ -65,6 +66,11 @@ get_header(); ?>
                 <span class="a-title"><?php the_title(); ?> </span>
               </div>
               <?php endwhile; ?>
+              <?php else: ?>
+                <div class="announcement-item">
+                  Check again in, announcements coming!
+                </div>
+              <?php endif;?>
             </div>
           </div>
 

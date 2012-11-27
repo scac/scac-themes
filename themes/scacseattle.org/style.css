@@ -58,6 +58,11 @@
         font-size: 16px; }
         #primary-nav .navbar .nav-item a:hover {
           color: #aaaaaa; }
+        #primary-nav .navbar .nav-item.disabled a {
+		  color: #CCC !important;
+		  pointer-events: none;
+		  cursor: default; }
+
 
 .site-footer {
   position: relative;
@@ -121,9 +126,32 @@
   .col-two-thirds form {
     margin: 20px 0 40px 0; }
     .col-two-thirds form input[type='text'] {
-      width: 240px; }
+      width: 209px; }
     .col-two-thirds form input[type='submit'] {
       background-color: #77991f; }
+      
+      .map-directions #startAddr, .map-directions #destAddr {
+  margin: 10px 10px 0 0;
+  float: left;
+  background: #efefef;
+  -webkit-border-radius: 6px 6px;
+  -moz-border-radius: 1;
+  -khtml-border-radius: 1;
+  border-radius: 1; }
+  .map-directions #startAddr, .map-directions #destAddr {
+    color: #aaaaaa;
+    font-size: 14px;
+    background: #efefef;
+    border: 0;
+    padding: 7px 15px; }
+  .map-directions input[type='submit'] {
+  	padding: 6px 15px;
+  	margin-top: 10px;
+    border: 0px;
+    background: #efefef; }
+   .map-directions input[type='submit']:hover {
+    	cursor: pointer;
+    }
 
 .col-one-third {
   width: 30%;
