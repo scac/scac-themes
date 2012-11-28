@@ -12,7 +12,7 @@ get_header(); ?>
 				<h1>Visit</h1>
 				<div class="clearfix">
 					<div class="col-two-thirds">
-						<iframe width="640" height="480" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=2308+Orcas+St.+Seattle,+WA,+98108&amp;aq=&amp;sll=47.613028,-122.342064&amp;sspn=0.281899,0.617294&amp;ie=UTF8&amp;hq=&amp;hnear=2308+S+Orcas+St,+Seattle,+Washington+98108&amp;t=m&amp;ll=47.55475,-122.302637&amp;spn=0.027804,0.054932&amp;z=14&amp;iwloc=A&amp;output=embed"></iframe><br /><small><a href="http://maps.google.com/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=2308+Orcas+St.+Seattle,+WA,+98108&amp;aq=&amp;sll=47.613028,-122.342064&amp;sspn=0.281899,0.617294&amp;ie=UTF8&amp;hq=&amp;hnear=2308+S+Orcas+St,+Seattle,+Washington+98108&amp;t=m&amp;ll=47.55475,-122.302637&amp;spn=0.027804,0.054932&amp;z=14&amp;iwloc=A" style="color:#0000FF;text-align:left">View Larger Map</a></small>
+						<iframe width="640" height="480" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=2803+Orcas+St.+Seattle,+WA,+98108&amp;aq=&amp;sll=47.613028,-122.342064&amp;sspn=0.281899,0.617294&amp;ie=UTF8&amp;hq=&amp;hnear=2803+S+Orcas+St,+Seattle,+Washington+98108&amp;t=m&amp;ll=47.55475,-122.302637&amp;spn=0.027804,0.054932&amp;z=14&amp;iwloc=A&amp;output=embed"></iframe><br /><small><a href="http://maps.google.com/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=2803+Orcas+St.+Seattle,+WA,+98108&amp;aq=&amp;sll=47.613028,-122.342064&amp;sspn=0.281899,0.617294&amp;ie=UTF8&amp;hq=&amp;hnear=2803+S+Orcas+St,+Seattle,+Washington+98108&amp;t=m&amp;ll=47.55475,-122.302637&amp;spn=0.027804,0.054932&amp;z=14&amp;iwloc=A" style="color:#0000FF;text-align:left">View Larger Map</a></small>
 					</div>
 					<div class="col-one-third">
 						<h2>Contact Info</h2>
@@ -40,7 +40,7 @@ get_header(); ?>
 					<form action="http://maps.google.com/maps" method="get" target="_blank">
 						<label for="saddr"></label>
 						<input type="text" name="saddr" value="From" />
-						<input type="text" name="daddr" value="2308 Orcas St. Seattle, WA, 98108" />
+						<input type="text" name="daddr" value="2803 Orcas St. Seattle, WA, 98108" />
 						<input type="submit" id="dir-submit" value="Get Directions" />
 					</form>
 				</div>
