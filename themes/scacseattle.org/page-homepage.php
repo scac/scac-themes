@@ -10,7 +10,7 @@ get_header(); ?>
         
         <!-- Place holder img !-->
         <div class="main-carousel">
-          <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/church.jpg" height="300px" width="100%">
+          <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/morethanstory11.jpg" height="300px" width="100%">
         </div>
 
         <table class="info-area">
@@ -37,7 +37,7 @@ get_header(); ?>
               </table>
 
               <p>
-                2308 Orcas St.
+                2803 S. Orcas St.
                 <br/>
                 Seattle, WA 98108
               </p>
