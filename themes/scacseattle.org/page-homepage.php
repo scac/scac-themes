@@ -19,7 +19,7 @@ get_header(); ?>
             <td class="info-header info-cell"><div class="header">Latest Sermon</div></td>
             <td class="info-header info-cell"><div class="header">Announcements</div></td>
           </tr>
-          <tr class="info-box info-cell">
+          <tr class="info-row">
             <td class="info-box info-cell">
               <table>
                 <tr>
