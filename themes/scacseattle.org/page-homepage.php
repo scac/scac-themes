@@ -8,10 +8,7 @@ get_header(); ?>
     <div id="primary" class="content-area">
       <div id="content" class="site-content" role="main">
         
-        <!-- Place holder img !-->
-        <div class="main-carousel">
-          <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/morethanstory11.jpg" height="300px" width="100%">
-        </div>
+        <?= apply_filters('the_content', '[gallery=1]'); ?>
 
         <table class="info-area">
           <tr class="info-row">

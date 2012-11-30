@@ -35,6 +35,7 @@
   ?></title>
 <link rel="profile" href="http://gmpg.org/xfn/11" />
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
+
 <!--[if lte IE 7]>
   <link rel="stylesheet" type="text/css" href="<?php echo get_stylesheet_directory_uri(); ?>/style-ie7.css" />
 <![endif]-->

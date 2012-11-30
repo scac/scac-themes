@@ -90,6 +90,16 @@
       position: relative;
       top: 0px; }
 
+.flexslider {
+  border: 0px;
+  overflow: hidden; }
+  .flexslider .flex-control-nav {
+    bottom: 10px; }
+  .flexslider .flex-control-paging li a {
+    background: #cccccc; }
+  .flexslider .flex-control-paging li a.flex-active {
+    background: #909090; }
+
 .info-area {
   display: table;
   width: 100%;
