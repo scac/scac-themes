@@ -28,7 +28,7 @@ get_header(); ?>
 			<p>
 				Seattle Chinese Alliance Church<br />
 				2803 S. Orcas St.<br />
-				Seattle, WA 98105
+				Seattle, WA 98108
 			</p>
 			<p>
 				<b>Contact Us</b><br />
