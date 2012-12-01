@@ -81,7 +81,8 @@
     .site-footer .links-container .footer-main-link {
       text-transform: uppercase;
       color: #444444;
-      font-weight: bold; }
+      font-weight: bold;
+      font-size: 11px; }
   .site-footer .social-btns {
     position: absolute;
     right: 30px;
@@ -115,7 +116,7 @@
       font-size: 11px;
       font-weight: bold; }
       .info-area .info-row .info-header .header {
-        padding: 0 0 10px 0px;
+        padding: 0 0 7px 0px;
         border-bottom: 3px solid #999999;
         width: 90%; }
       .info-area .info-row .info-header:last-child .header {
