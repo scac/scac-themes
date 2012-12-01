@@ -45,23 +45,38 @@ get_header(); ?>
               Coming Soon
             </td>
             <td class="info-box info-cell">
-              <?php 
-                $args = array( 'post_type' => 'announcement', 'posts_per_page' => 10 );
-                $loop = new WP_Query( $args );
-                if($loop->have_posts()) : 
-                  while ( $loop->have_posts() ) : $loop->the_post();
+              <?php
+                global $nggdb;
+                if(isset($nggdb)): 
+                  $img = array_shift($nggdb->get_gallery(2)); //only take the first image anyway
+
+                  if(isset($img)){
+                    echo '<img src="' . $img->imageURL . '" alt="' . $img->alttext . '" class="announcement-img">';  
+                  }else{
+
+
+                    $args = array( 'post_type' => 'announcement', 'posts_per_page' => 10 );
+                    $loop = new WP_Query( $args );
+                    if($loop->have_posts()) : 
+                      while ( $loop->have_posts() ) : $loop->the_post();
+                    ?>
+                    <div class="announcement-item">
+                      <span class="date"><?php the_time("n/d"); ?></span>
+                      <span class="black-dot">&bull;</span>
+                      <span class="a-title"><?php the_title(); ?> </span>
+                    </div>
+                    <?php endwhile; ?>
+                    <?php else: ?>
+                      <div class="announcement-item">
+                        Check again in, announcements coming!
+                      </div>
+                    <?php endif;
+
+                  }
+                  
+                endif; 
+
               ?>
-              <div class="announcement-item">
-                <span class="date"><?php the_time("n/d"); ?></span>
-                <span class="black-dot">&bull;</span>
-                <span class="a-title"><?php the_title(); ?> </span>
-              </div>
-              <?php endwhile; ?>
-              <?php else: ?>
-                <div class="announcement-item">
-                  Check again in, announcements coming!
-                </div>
-              <?php endif;?>
             </td>
           </tr>
         </table>
