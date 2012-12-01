@@ -6,7 +6,7 @@ Template Name: Page - Church
 get_header(); ?>
 
     <div id="primary" class="content-area">
-      <div id="content" class="page-church clearfix" role="main">
+      <div id="content" class="page page-church clearfix" role="main">
         
         <div class="page-church clearfix">
           <div class="col-left">

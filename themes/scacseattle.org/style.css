@@ -13,7 +13,8 @@
 
 .site-title {
   font-size: 20px;
-  float: left; }
+  float: left;
+  font-weight: bolder; }
   .site-title a {
     color: black; }
 
@@ -27,7 +28,6 @@
   border-radius: 1; }
   .site-search div #s {
     color: #aaaaaa;
-    font-size: 14px;
     background: #efefef;
     border: 0;
     padding: 7px 15px; }
@@ -38,7 +38,7 @@
 #primary-nav {
   display: table;
   width: 100%;
-  margin: 10px 0 30px; }
+  margin: 10px 0 10px; }
   #primary-nav .navbar {
     padding: 0 0 20px 0px;
     display: table-row;
@@ -93,7 +93,8 @@
 
 .flexslider {
   border: 0px;
-  overflow: hidden; }
+  overflow: hidden;
+  margin: 30px 0 30px 0; }
   .flexslider .flex-control-nav {
     bottom: 10px; }
   .flexslider .flex-control-paging li a {
@@ -104,7 +105,7 @@
 .info-area {
   display: table;
   width: 100%;
-  margin: 40px 0 45px; }
+  margin: 35px 0 45px; }
   .info-area .info-row {
     display: table-row;
     width: 100%; }
@@ -122,7 +123,7 @@
       .info-area .info-row .info-header:last-child .header {
         width: 100%; }
     .info-area .info-row .info-box {
-      padding: 20px 0 0px 0px;
+      padding: 15px 0 0px 0px;
       display: table-cell; }
 
 .announcement-img {
@@ -136,36 +137,36 @@
     border-bottom: none; }
 
 .col-two-thirds {
-  width: 63%;
+  width: 75%;
   float: left;
-  margin-right: 60px; }
+  padding-right: 40px; }
   .col-two-thirds small {
     display: none; }
 
-.dir-entry-container h2 {
+.map-directions h2 {
   margin-top: 20px; }
-.dir-entry-container form {
+.map-directions form {
   margin: 20px 0 40px 0; }
-  .dir-entry-container form input {
-    padding: 10px;
-    border: 1px solid #aaaaaa;
-    font-size: 14px;
-    -webkit-border-radius: 6px 6px;
-    -moz-border-radius: 1;
-    -khtml-border-radius: 1;
-    border-radius: 1; }
-    .dir-entry-container form input[type='text'] {
+  .map-directions form input {
+    padding: 7px;
+    border: 1px solid #cccccc;
+    background: #eeeeee; }
+    .map-directions form input[type='text'] {
       width: 240px; }
-    .dir-entry-container form input[type='submit'] {
+    .map-directions form input[type='submit'] {
       border: 0;
-      padding: 10px;
-      margin: 0 0 0 10px;
+      padding: 7px;
+      margin: 0 0 0 7px;
       background-color: #6d8f23;
       color: #efefef; }
 
 .col-one-third {
-  width: 30%;
-  float: left; }
+  width: 20%;
+  float: left;
+  margin-top: -1em; }
+
+.page {
+  padding: 0 10px; }
 
 .page-church {
   width: 100%; }
@@ -227,3 +228,7 @@ table, tr, td {
   color: #cccccc !important;
   pointer-events: none;
   cursor: default; }
+
+h1 {
+  font-weight: normal;
+  font-size: 18px; }

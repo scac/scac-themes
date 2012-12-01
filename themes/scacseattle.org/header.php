@@ -52,7 +52,7 @@
   <header id="masthead" class="site-header" role="banner">
     <div class="clearfix">
       <hgroup class="">
-        <?php if(is_home()) : ?>
+        <?php if(is_home() || is_page('Homepage')) : ?>
           <h1 class="site-title"><a href="<?php echo home_url( '/' ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
         <?php else : ?>
           <h2 class="site-title"><a href="<?php echo home_url( '/' ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h2>
