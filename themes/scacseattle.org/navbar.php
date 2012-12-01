@@ -10,7 +10,7 @@
 
 <table  id="primary-nav" role="navigation" class="site-navigation main-navigation  black-bar">
   <tr class="navbar clearfix">
-    <td class="nav-item disabled"><a href="#">Church</a></td>
+    <td class="nav-item"><a href="<?php echo home_url("/church/our-vision/"); ?>">Church</a></td>
     <td class="nav-item"><a href="<?php echo home_url("/visit/"); ?>">Visit</a></td>
     <td class="nav-item disabled"><a href="#">Ministries</a></td>
     <td class="nav-item disabled"><a href="#">Sermons</a></td>

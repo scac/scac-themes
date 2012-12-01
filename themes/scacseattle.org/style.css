@@ -167,6 +167,8 @@
 
 .page {
   padding: 0 10px; }
+  .page h1 a {
+    color: #444444; }
 
 .page-church {
   width: 100%; }
@@ -177,28 +179,32 @@
     width: 25%;
     float: left; }
 
-.sidebar .sidebar-title {
-  text-transform: uppercase;
-  font-weight: normal;
-  font-size: 16px; }
-.sidebar .sidebar-page-listing {
-  list-style: none; }
-  .sidebar .sidebar-page-listing li {
-    margin-bottom: 10px; }
-  .sidebar .sidebar-page-listing a {
-    font-size: 16px;
-    position: relative;
-    color: #444444; }
-  .sidebar .sidebar-page-listing .current_page_item a {
-    color: #77991f;
-    font-weight: bold; }
-  .sidebar .sidebar-page-listing .current_page_item .active-box {
-    height: 16px;
-    width: 16px;
-    background: #77991f;
-    display: block;
-    position: absolute;
-    left: -22px; }
+.sidebar {
+  margin: 30px 0 0 0; }
+  .sidebar .sidebar-title {
+    margin: 0 0 20px 40px;
+    text-transform: uppercase;
+    font-weight: normal;
+    font-size: 12px; }
+  .sidebar .sidebar-page-listing {
+    list-style: none; }
+    .sidebar .sidebar-page-listing li {
+      margin-bottom: 0.5em; }
+    .sidebar .sidebar-page-listing a {
+      font-size: 11px;
+      position: relative;
+      color: #444444; }
+    .sidebar .sidebar-page-listing .current_page_item a {
+      color: #77991f;
+      font-weight: bold; }
+    .sidebar .sidebar-page-listing .current_page_item .active-box {
+      height: 1em;
+      width: 1em;
+      background: #77991f;
+      display: block;
+      position: absolute;
+      left: -1.5em;
+      top: 0.5px; }
 
 body {
   font-family: Arial;
