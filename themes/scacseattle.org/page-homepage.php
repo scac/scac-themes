@@ -21,15 +21,15 @@ get_header(); ?>
               <table>
                 <tr>
                   <td>8:30am</td>
-                  <td>Chinese Service 1</td>
+                  <td>Cantonese Service 1</td>
                 </tr>
                 <tr>
-                  <td>10am</td>
-                  <td>English Service</td>
+                  <td>10:00am</td>
+                  <td>English Ministries Service</td>
                 </tr>
                 <tr>
                   <td>11:30am</td>
-                  <td>Chinese Service 2</td>
+                  <td>Cantonese Service 2</td>
                 </tr>
               </table>
 
