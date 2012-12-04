@@ -33,7 +33,11 @@
     padding: 7px 15px; }
   .site-search div #searchsubmit {
     border: 0px;
-    background: #efefef; }
+    background: url("images/search_mag.png") no-repeat;
+    cursor: pointer;
+    width: 29px;
+    position: relative;
+    top: 1px; }
 
 #primary-nav {
   display: table;
@@ -90,7 +94,7 @@
     top: 20px; }
     .site-footer .social-btns .fb-btn {
       position: relative;
-      top: 0px; }
+      top: -7px; }
 
 .flexslider {
   border: 0px;
@@ -208,7 +212,7 @@
       top: 0.5px; }
 
 body {
-  font-family: Arial;
+  font-family: "Open Sans", sans-serif, Arial;
   font-size: 12px;
   margin: 0px;
   color: #444444; }
@@ -239,3 +243,6 @@ table, tr, td {
 h1 {
   font-weight: normal;
   font-size: 18px; }
+
+*:focus {
+  outline: none; }
