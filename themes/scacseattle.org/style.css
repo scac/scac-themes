@@ -18,6 +18,9 @@
   .site-title a {
     color: black; }
 
+.csl-container {
+  float: right; }
+
 .site-search {
   margin: 10px 0 0 0;
   float: right;

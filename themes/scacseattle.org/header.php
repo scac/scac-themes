@@ -66,6 +66,10 @@
           </div>
         </form>
       </div>
+      
+      <div class="csl-container">
+        <a href="http://chinese.scacseattle.org/" class="chinese-service-link">中國服務</a>
+      </div>
     </div>
 
     <?php get_template_part("navbar"); ?>
