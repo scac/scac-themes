@@ -20,14 +20,22 @@
 	<div class="entry-summary">
 		<?php the_excerpt(); ?>
 	</div><!-- .entry-summary -->
-	<?php else : ?>
-	<div class="entry-content">
-		<?php the_content( __( 'Continue reading <span class="meta-nav">&rarr;</span>', '_s' ) ); ?>
-		<?php wp_link_pages( array( 'before' => '<div class="page-links">' . __( 'Pages:', '_s' ), 'after' => '</div>' ) ); ?>
-	</div><!-- .entry-content -->
+	<?php elseif (get_post_type() != 'ct_sermon') : ?>
+		<div class="entry-content">
+			<?php the_content( __( 'Continue reading <span class="meta-nav">&rarr;</span>', '_s' ) ); ?>
+			<?php wp_link_pages( array( 'before' => '<div class="page-links">' . __( 'Pages:', '_s' ), 'after' => '</div>' ) ); ?>
+		</div><!-- .entry-content -->
+	<?php else :
+		echo('<p>'.get_the_term_list($post->ID, 'sermon_speaker').'</p>');
+		$args = array( 'post_type' => 'ct_sermon', 'posts_per_page' => 10 );
+		$loop = new WP_Query( $args );
+		while ( $loop->have_posts() ) : $loop->the_post();
+			echo '</div>';
+		endwhile;
+	 ?>
 	<?php endif; ?>
 
-	<footer class="entry-meta">
+	<footer class="entry-meta" style="display:none;">
 		<?php if ( 'post' == get_post_type() ) : // Hide category and tag text for pages on Search ?>
 			<?php
 				/* translators: used between list items, there is a space after the comma */

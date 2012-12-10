@@ -252,3 +252,8 @@ h1 {
 
 *:focus {
   outline: none; }
+  
+/* Sermons pages. */
+.ct_sermon {
+	width: 70%;
+	border-bottom: 2px solid #ccc; }
