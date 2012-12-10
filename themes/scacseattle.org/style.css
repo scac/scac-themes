@@ -257,3 +257,8 @@ h1 {
 .ct_sermon {
 	width: 70%;
 	border-bottom: 2px solid #ccc; }
+.social.sermons ul {
+	padding-left: 0px; }
+.social.sermons ul li {
+	list-style-type: none; }
+	
