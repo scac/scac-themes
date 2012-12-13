@@ -16,8 +16,24 @@ get_header(); ?>
 			<?php if ( have_posts() ) : ?>
 
 				<header class="page-header">
-					<h1 class="page-title">
-						<?php
+          <h1 class="page-title">Sermons</h1>
+
+          <!-- This draws out the sermon series topics. -->
+          <?php if ( 'ct_sermon' == get_post_type() ) : ?>
+            <div clas="right-sermons-nav" style="float: right;">
+              <?php
+		              $taxonomy = 'sermon_series';
+		              $terms = get_terms($taxonomy);
+		              foreach ($terms as $term) {
+			              $term_slug = $term->slug;
+                    $current_series = get_the_term_list('', 'sermon_series');
+				            echo '<a href="'.get_home_url().'/series/'.$term->slug.'">'.$term->name.'</a><br />';
+		              }
+	            ?>
+            </div>
+          <?php endif; ?>
+          
+<!--						<?php
 							if ( is_category() ) {
 								printf( __( 'Category Archives: %s', '_s' ), '<span>' . single_cat_title( '', false ) . '</span>' );
 
@@ -50,7 +66,7 @@ get_header(); ?>
 
 							}
 						?>
-					</h1>
+					</h1> -->
 					<?php
 						if ( is_category() ) {
 							// show an optional category description
@@ -93,5 +109,5 @@ get_header(); ?>
 			</div><!-- #content .site-content -->
 		</section><!-- #primary .content-area -->
 
-<?php get_sidebar(); ?>
+<?php //get_sidebar(); ?>
 <?php get_footer(); ?>
