@@ -30,7 +30,7 @@ get_header(); ?>
                   foreach ($terms as $k => $term) {
                     $current_series = get_the_term_list('', 'sermon_series');
                     ?>
-                      <td><a href="<?php get_term_link($term); ?>"><?php echo $term->name; ?></a></td>
+                      <td><a href="<?php echo get_term_link($term); ?>"><?php echo $term->name; ?></a></td>
                     <?php
                     if(($k+1)%3 == 0)
                       echo "</tr><tr>"; //make a new row every 3rd sermon
