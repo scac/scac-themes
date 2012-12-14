@@ -19,7 +19,7 @@ if(!defined('WP_THEME_URL')) {
 	define( 'WP_THEME_URL', get_template_directory_uri());
 }
 if(!defined('WP_THEME_DIR')) {
-	define( 'WP_THEME_DIR', get_template_directory_uri());
+	define( 'WP_THEME_DIR', get_template_directory());
 }
 
 
@@ -54,13 +54,13 @@ if ( !isset( $content_width ) ) {
 // Register the scripts
 function churchthemes_register() {
 	wp_register_style( 'churchthemes-main', get_stylesheet_uri(), array(), '1.2' );
-	wp_register_style( 'churchthemes-scheme', WP_THEME_DIR . '/lib/scripts/scheme.php', array( 'churchthemes-main' ), false );
-	wp_register_style( 'churchthemes-admin', WP_THEME_DIR . '/lib/admin/css/admin.css', array(), false );
-	wp_register_script( 'churchthemes-slider', WP_THEME_DIR . '/lib/scripts/jquery.flexslider.min.js', array( 'jquery' ), '2.0', true );
-	wp_register_script( 'churchthemes-selectbox', WP_THEME_DIR . '/lib/scripts/jquery.selectbox.min.js', array( 'jquery' ), '0.5', true );
-	wp_register_script( 'churchthemes-placeholder', WP_THEME_DIR . '/lib/scripts/jquery.placeholder.min.js', array( 'jquery' ), false, true );
-	wp_register_script( 'churchthemes-twitter', WP_THEME_DIR . '/lib/scripts/twitter.min.js', array(), false, false );
-	wp_register_script( 'churchthemes-main', WP_THEME_DIR . '/lib/scripts/main.min.js', array( 'jquery' ), '1.2', true );
+	wp_register_style( 'churchthemes-scheme', WP_THEME_URL . '/lib/scripts/scheme.php', array( 'churchthemes-main' ), false );
+	wp_register_style( 'churchthemes-admin', WP_THEME_URL . '/lib/admin/css/admin.css', array(), false );
+	wp_register_script( 'churchthemes-slider', WP_THEME_URL . '/lib/scripts/jquery.flexslider.min.js', array( 'jquery' ), '2.0', true );
+	wp_register_script( 'churchthemes-selectbox', WP_THEME_URL . '/lib/scripts/jquery.selectbox.min.js', array( 'jquery' ), '0.5', true );
+	wp_register_script( 'churchthemes-placeholder', WP_THEME_URL . '/lib/scripts/jquery.placeholder.min.js', array( 'jquery' ), false, true );
+	wp_register_script( 'churchthemes-twitter', WP_THEME_URL . '/lib/scripts/twitter.min.js', array(), false, false );
+	wp_register_script( 'churchthemes-main', WP_THEME_URL . '/lib/scripts/main.min.js', array( 'jquery' ), '1.2', true );
 }
 add_action( 'init', 'churchthemes_register' );
 
@@ -928,7 +928,7 @@ if(!function_exists('ct_youtube_shortcode')) {
 
 	// Load the TinyMCE plugin : editor_plugin.js (wp2.5)
 	function ct_add_youtube_tinymce_plugin($plugin_array) {
-	   $plugin_array['ct_youtube_button'] = WP_THEME_DIR . '/lib/admin/scripts/editor_plugin.js';
+	   $plugin_array['ct_youtube_button'] = WP_THEME_URL . '/lib/admin/scripts/editor_plugin.js';
 	   return $plugin_array;
 	}
 
@@ -991,7 +991,7 @@ if(!function_exists('ct_vimeo_shortcode')) {
 
 	// Load the TinyMCE plugin : editor_plugin.js (wp2.5)
 	function ct_add_vimeo_tinymce_plugin($plugin_array) {
-		$plugin_array['ct_vimeo_button'] = WP_THEME_DIR . '/lib/admin/scripts/editor_plugin.js';
+		$plugin_array['ct_vimeo_button'] = WP_THEME_URL . '/lib/admin/scripts/editor_plugin.js';
 		return $plugin_array;
 	}
 
