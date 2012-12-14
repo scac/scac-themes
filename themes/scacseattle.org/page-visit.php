@@ -3,9 +3,11 @@
 Template Name: Page - Visit
 */
 
+/******* This page does nto use #primary ***********/
+
 get_header(); ?>
 
-    <div id="primary" class="content-area">
+    <div id="page-visit" class="content-area">
       <div id="content" class="page site-content clearfix" role="main">
         
         <!-- Place holder img !-->

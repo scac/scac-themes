@@ -202,12 +202,6 @@
 
 .page-church {
   width: 100%; }
-  .page-church .col-left {
-    width: 75%;
-    float: left; }
-  .page-church .col-right {
-    width: 25%;
-    float: left; }
   .page-church .leadership-pic {
     padding-right: 10px;
     vertical-align: top; }
@@ -216,6 +210,42 @@
   .page-church h2 {
     font-size: 16px;
     font-weight: normal; }
+
+.ct_sermon {
+  width: 70%;
+  border-bottom: 2px solid #cccccc; }
+
+.social.sermons ul {
+  padding-left: 0px; }
+
+.social.sermons ul li {
+  list-style-type: none; }
+
+#primary {
+  width: 75%;
+  float: left; }
+
+.sidebar-right {
+  width: 25%;
+  float: left; }
+
+.post-divider {
+  width: 100%;
+  height: 1px;
+  display: block;
+  background: #cccccc;
+  margin-top: 15px; }
+
+.page blockquote, .post blockquote {
+  font-size: 20px;
+  border: 0;
+  margin: 0;
+  padding: 0; }
+.page table h1, .page table h2, .page table h3, .page table h4, .page table h5, .post table h1, .post table h2, .post table h3, .post table h4, .post table h5 {
+  margin-top: 0;
+  padding-top: 0; }
+.page .alignleft, .post .alignleft {
+  float: left; }
 
 .sidebar {
   margin: 30px 0 0 0; }
@@ -243,35 +273,6 @@
       position: absolute;
       left: -1.5em;
       top: 2px; }
-
-.ct_sermon {
-  width: 70%;
-  border-bottom: 2px solid #cccccc; }
-
-.social.sermons ul {
-  padding-left: 0px; }
-
-.social.sermons ul li {
-  list-style-type: none; }
-
-.alignleft {
-  float: left; }
-
-.post-divider {
-  width: 100%;
-  height: 1px;
-  display: block;
-  background: #cccccc;
-  margin-top: 15px; }
-
-.page blockquote, .post blockquote {
-  font-size: 20px;
-  border: 0;
-  margin: 0;
-  padding: 0; }
-.page table h1, .page table h2, .page table h3, .page table h4, .page table h5, .post table h1, .post table h2, .post table h3, .post table h4, .post table h5 {
-  margin-top: 0;
-  padding-top: 0; }
 
 body {
   font-family: "Open Sans", sans-serif, Arial;
