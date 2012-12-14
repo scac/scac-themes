@@ -58,29 +58,38 @@
     position: relative;
     top: 1px; }
 
-#primary-nav {
-  display: table;
-  width: 100%;
-  margin: 10px 0 10px; }
-  #primary-nav .navbar {
-    padding: 0 0 20px 0px;
-    display: table-row;
-    width: 100%; }
-    #primary-nav .navbar .nav-item {
-      display: table-cell;
-      width: 20%;
-      position: relative;
-      padding: 20px;
-      text-align: center;
-      border-top: 1px solid #222222; }
-      #primary-nav .navbar .nav-item a {
-        padding: 20px 0px;
-        margin: 0 4%;
-        text-transform: uppercase;
-        color: black;
-        font-size: 12px; }
-        #primary-nav .navbar .nav-item a:hover {
-          color: #aaaaaa; }
+.primary-nav-container {
+  margin-top: 10px;
+  border-top: 1px solid #222222; }
+  .primary-nav-container #primary-nav {
+    display: table;
+    width: 100%;
+    margin: 0px 0 10px; }
+    .primary-nav-container #primary-nav .navbar {
+      padding: 0 0 20px 0px;
+      display: table-row;
+      width: 100%; }
+      .primary-nav-container #primary-nav .navbar .active_tab {
+        border-top: 7px solid #77991f;
+        position: absolute;
+        display: block;
+        width: 100%;
+        top: 0px;
+        left: 0px; }
+      .primary-nav-container #primary-nav .navbar .nav-item {
+        display: table-cell;
+        width: 20%;
+        position: relative;
+        padding: 20px;
+        text-align: center; }
+        .primary-nav-container #primary-nav .navbar .nav-item a {
+          padding: 20px 0px;
+          margin: 0 4%;
+          text-transform: uppercase;
+          color: black;
+          font-size: 12px; }
+          .primary-nav-container #primary-nav .navbar .nav-item a:hover {
+            color: #aaaaaa; }
 
 .site-footer {
   position: relative;
@@ -215,8 +224,10 @@
     font-weight: normal; }
 
 .sermon-list-post {
+  border-bottom: 2px solid #cccccc;
   margin: 0 0 20px;
-  padding: 0 0 20px; }
+  padding: 0 0 20px;
+  width: 95%; }
   .sermon-list-post .entry-header {
     margin: 0 0 10px; }
   .sermon-list-post .entry-title-container {
@@ -238,9 +249,15 @@
   .sermon-series-listings td {
     height: 80px; }
 
-.ct_sermon {
-  width: 95%;
+.sermon-post {
+  margin-bottom: 20px;
+  padding-bottom: 20px;
   border-bottom: 2px solid #cccccc; }
+  .sermon-post .entry-header .entry-title {
+    padding: 0 0 10px;
+    border-bottom: 2px solid #cccccc; }
+  .sermon-post .entry-header .entry-meta .comments-cnt {
+    float: right; }
 
 .social.sermons ul {
   padding-left: 0px; }

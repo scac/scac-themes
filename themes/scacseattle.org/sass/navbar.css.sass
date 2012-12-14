@@ -1,26 +1,34 @@
-
-#primary-nav
-  display: table
-  width: 100%
-  margin: 10px 0 10px 
-  .navbar
-    padding: 0 0 20px 0px
-    display: table-row
+.primary-nav-container
+  margin-top: 10px
+  border-top: 1px solid #222
+  #primary-nav
+    display: table
     width: 100%
-    .nav-item
-      display: table-cell
-      width: 20%
-      position: relative
-      padding: 20px
-      text-align: center
-      border-top: 1px solid #222
+    margin: 0px 0 10px 
+    .navbar
+      padding: 0 0 20px 0px
+      display: table-row
+      width: 100%
+      .active_tab
+        border-top: 7px solid $active-link-color
+        position: absolute
+        display: block
+        width: 100%
+        top: 0px
+        left: 0px
+      .nav-item
+        display: table-cell
+        width: 20%
+        position: relative
+        padding: 20px
+        text-align: center
 
-      a
-        padding: 20px 0px
-        margin: 0 4%
-        text-transform: uppercase
-        color: black
-        font-size: 12px
+        a
+          padding: 20px 0px
+          margin: 0 4%
+          text-transform: uppercase
+          color: black
+          font-size: 12px
 
-        &:hover
-          color: #AAA
+          &:hover
+            color: #AAA
