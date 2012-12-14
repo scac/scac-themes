@@ -1,11 +1,21 @@
-/* Theme Name: SCAC Seattle's English Theme
+/*
+ * Theme Name: SCAC Seattle's English Theme
+ *
  * Theme URI: http://english.scacseattle.org/
+ *
  * Description: I like turtles!
+ *
  * Author: Team Awesome
+ *
  * Template: _s
+ *
  * Version: v0.1
  *
+ *
+ *
  * Nom nom nom nom
+ *
+ *
  *
  */
 .site-header {
@@ -23,6 +33,9 @@
   position: relative;
   top: 17px;
   right: 22px; }
+
+.chinese-service-link {
+  text-transform: uppercase; }
 
 .site-search {
   margin: 10px 0 0 0;
@@ -87,8 +100,12 @@
       list-style: none;
       margin: 0px;
       padding: 0px; }
+      .site-footer .links-container ul .listing-headers {
+        float: left; }
       .site-footer .links-container ul li {
-        margin: 0 0 25px 0; }
+        margin: 0 20px 0px 0; }
+        .site-footer .links-container ul li .footer-listings li a {
+          color: #777777; }
     .site-footer .links-container .footer-main-link {
       text-transform: uppercase;
       color: #444444;
@@ -123,6 +140,8 @@
     .info-area .info-row .info-cell {
       width: 20%;
       vertical-align: top; }
+      .info-area .info-row .info-cell .service-time {
+        padding-right: 5px; }
     .info-area .info-row .info-header {
       text-transform: uppercase;
       font-size: 11px;
@@ -189,6 +208,14 @@
   .page-church .col-right {
     width: 25%;
     float: left; }
+  .page-church .leadership-pic {
+    padding-right: 10px;
+    vertical-align: top; }
+  .page-church h1 {
+    font-size: 20px; }
+  .page-church h2 {
+    font-size: 16px;
+    font-weight: normal; }
 
 .sidebar {
   margin: 30px 0 0 0; }
@@ -215,7 +242,36 @@
       display: block;
       position: absolute;
       left: -1.5em;
-      top: 0.5px; }
+      top: 2px; }
+
+.ct_sermon {
+  width: 70%;
+  border-bottom: 2px solid #cccccc; }
+
+.social.sermons ul {
+  padding-left: 0px; }
+
+.social.sermons ul li {
+  list-style-type: none; }
+
+.alignleft {
+  float: left; }
+
+.post-divider {
+  width: 100%;
+  height: 1px;
+  display: block;
+  background: #cccccc;
+  margin-top: 15px; }
+
+.page blockquote, .post blockquote {
+  font-size: 20px;
+  border: 0;
+  margin: 0;
+  padding: 0; }
+.page table h1, .page table h2, .page table h3, .page table h4, .page table h5, .post table h1, .post table h2, .post table h3, .post table h4, .post table h5 {
+  margin-top: 0;
+  padding-top: 0; }
 
 body {
   font-family: "Open Sans", sans-serif, Arial;
@@ -252,13 +308,3 @@ h1 {
 
 *:focus {
   outline: none; }
-  
-/* Sermons pages. */
-.ct_sermon {
-	width: 70%;
-	border-bottom: 2px solid #ccc; }
-.social.sermons ul {
-	padding-left: 0px; }
-.social.sermons ul li {
-	list-style-type: none; }
-	

@@ -20,15 +20,15 @@ get_header(); ?>
             <td class="info-box info-cell">
               <table>
                 <tr>
-                  <td>8:30am</td>
+                  <td class="service-time">8:30am</td>
                   <td>Cantonese Service 1</td>
                 </tr>
                 <tr>
-                  <td>10:00am</td>
+                  <td class="service-time">10:00am</td>
                   <td>English Ministries Service</td>
                 </tr>
                 <tr>
-                  <td>11:30am</td>
+                  <td class="service-time">11:30am</td>
                   <td>Cantonese Service 2</td>
                 </tr>
               </table>
@@ -39,7 +39,7 @@ get_header(); ?>
                 Seattle, WA 98108
               </p>
 
-              <a href="<?php echo home_url("/")?>/visit/">Directions</a>
+              <a href="<?php echo home_url("/")?>visit/">Directions</a>
             </td>
             <td class="info-box info-cell">
               Coming Soon

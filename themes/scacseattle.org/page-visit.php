@@ -19,7 +19,7 @@ get_header(); ?>
         <form action="http://maps.google.com/maps" method="get" target="_blank">
           <label for="saddr"></label>
           <input type="text" name="saddr" value="From" id="startAddr" />
-          <input type="text" name="daddr" value="2803 S. Orcas St." id="destAddr" />
+          <input type="text" name="daddr" value="2803 S. Orcas St., 98108" id="destAddr" />
           <input type="submit" value="Get directions" />
         </form>
       </div>

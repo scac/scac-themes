@@ -13,10 +13,25 @@
 
   <footer id="colophon" class="site-footer clearfix" role="contentinfo">
 
-    <div class="links-container">
+    <div class="links-container clearfix">
       <ul>
-        <li><a href="<?php echo home_url("/"); ?>" class="footer-main-link">Home</a></li>
-        <li><a href="<?php echo home_url("/"); ?>/visit/" class="footer-main-link">Visit</a></li>
+        <li class="listing-headers">
+          <a href="<?php echo home_url("/"); ?>church/our-vision/" class="footer-main-link">Church</a>
+          <ul class="footer-listings">
+            <?php 
+              $page = get_page_by_title('church');
+              wp_list_pages(array(
+                'title_li'    => '',
+                'child_of'    => $page->ID,
+              ));
+            ?>
+          </ul>
+        </li>
+        <li>
+          <a href="<?php echo home_url("/"); ?>visit/" class="footer-main-link">Visit</a>
+        </li>
+      </ul>
+
     </div>
 
     <p class="copyright">© 2012 Seattle Chinese Alliance Church.</p>
