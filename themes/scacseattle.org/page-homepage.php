@@ -3,9 +3,11 @@
 Template Name: Page - Homepage
 */
 
+
+/*************** does not use #primary **************/
 get_header(); ?>
 
-    <div id="primary" class="content-area">
+    <div id="page-homepage" class="content-area">
       <div id="content" class="site-content" role="main">
         
         <?= apply_filters('the_content', '[gallery=1]'); ?>
