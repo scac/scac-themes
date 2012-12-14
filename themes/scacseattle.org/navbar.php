@@ -13,7 +13,7 @@
     <td class="nav-item"><a href="<?php echo home_url("/church/our-vision/"); ?>">Church</a></td>
     <td class="nav-item"><a href="<?php echo home_url("/visit/"); ?>">Visit</a></td>
     <td class="nav-item disabled"><a href="#">Ministries</a></td>
-    <td class="nav-item disabled"><a href="#">Sermons</a></td>
+    <td class="nav-item"><a href="<?php echo home_url("/sermons/"); ?>">Sermons</a></td>
     <td class="nav-item disabled"><a href="#">Give</a></td>
   </tr>
 </table>
