@@ -30,17 +30,17 @@ die ('<h1>Access Denied</h1>');
 
 // Define theme location for bundled plugins
 if(!defined('WP_THEME_URL')) {
-	define( 'WP_THEME_URL', get_template_directory_uri());
+	define( 'WP_THEME_URL', get_stylesheet_directory_uri());
 }
 if(!defined('WP_THEME_DIR')) {
-	define( 'WP_THEME_DIR', get_template_directory_uri());
+	define( 'WP_THEME_DIR', get_stylesheet_directory());
 }
 
-require_once ( TEMPLATEPATH . '/config.php' );
+require_once ( WP_THEME_DIR . '/config.php' );
 
 // Set path to function libraries
-$admin_path = TEMPLATEPATH . '/lib/admin/';
-$functions_path = TEMPLATEPATH . '/lib/functions/';
+$admin_path = WP_THEME_DIR . '/lib/admin/';
+$functions_path = WP_THEME_DIR . '/lib/functions/';
 
 // Load each admin function
 require_once ($admin_path . 'theme-options.php');			// Custom theme options
