@@ -4,29 +4,44 @@
     <h3 class="sidebar-title">Sermon Series</h3>
     <ul class="sidebar-page-listing">
     <?php
-      global $wp_query;
+      global $wp_query, $post;
+
+      if(is_single($post)){
+        $post_id_to_check = $post->ID;
+      }else{
+        $post_id_to_check = -1; //seems like somewhat of a hack
+      }
       $global_term = $wp_query->get_queried_object();        
+
       $taxonomy = 'sermon_series';
       $terms = get_terms($taxonomy);
       foreach ($terms as $term) {
-        $current_series = get_the_term_list('', 'sermon_series');
         
         ?>
         <li class="page_item <?php echo ($global_term->slug == $term->slug ? "current_page_item" : ""); ?>">
           <a href="<?php echo get_term_link($term); ?>"><span class="active-box"></span><?php echo $term->name; ?></a>
           <?php
-            if(false && $global_term->slug == $term->slug) :
+            if($global_term->slug == $term->slug || has_term($term->slug, $taxonomy, $post_id_to_check)) :
               ?>
-              <ul class="sidebar-page-listing">
+              <ul class="sidebar-sub-page-listing">
                 <?php 
                   $args = array(
                     'post_type' => 'ct_sermon',
-                    'ct_sermon' => $term->slug
-
+                    'tax_query' => array(
+                        array(
+                          'taxonomy' => 'sermon_series', //different from post_type, obvious i know... sigh.
+                          'terms' => $term->slug,
+                          'field' => 'slug' //What column from the db you're using
+                        )
+                    ),
                   );
                   $posts = get_posts($args);
-                  var_dump($posts);
+                  foreach($posts as $p) :
                 ?>
+                  <li class="page_item <?php echo ($p->ID == $post->ID ? "current_page_item" : ""); ?>">
+                    <a href="<?php echo get_permalink($p); ?>"><span class="active-box"></span><?php echo get_the_title($p); ?></a>
+                  </li>
+                <?php endforeach; ?>
               </ul>
               <?php
             endif;

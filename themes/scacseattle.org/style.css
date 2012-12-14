@@ -269,17 +269,21 @@
       font-size: 11px;
       position: relative;
       color: #444444; }
-    .sidebar .sidebar-page-listing .current_page_item a {
+    .sidebar .sidebar-page-listing .sidebar-sub-page-listing {
+      margin: 0.5em 0 0 16px;
+      padding: 0px;
+      list-style: none; }
+    .sidebar .sidebar-page-listing .current_page_item > a {
       color: #77991f;
       font-weight: bold; }
-    .sidebar .sidebar-page-listing .current_page_item .active-box {
-      height: 1em;
-      width: 1em;
-      background: #77991f;
-      display: block;
-      position: absolute;
-      left: -1.5em;
-      top: 2px; }
+      .sidebar .sidebar-page-listing .current_page_item > a .active-box {
+        height: 1em;
+        width: 1em;
+        background: #77991f;
+        display: block;
+        position: absolute;
+        left: -1.5em;
+        top: 2px; }
 
 body {
   font-family: "Open Sans", sans-serif, Arial;

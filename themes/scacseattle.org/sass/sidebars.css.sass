@@ -16,16 +16,22 @@
       font-size: 11px
       position: relative
       color: $text-color
+
+    .sidebar-sub-page-listing
+      margin: 0.5em 0 0 16px
+      padding: 0px
+      list-style: none
     .current_page_item
-      a
-        color: #77991F
+      > a
+        color: $active-link-color
         font-weight: bold
-      .active-box
-        height: 1em
-        width: 1em
-        background: #77991F
-        display: block
-        position: absolute
-        left: -1.5em
-        top: 2px
+
+        .active-box
+          height: 1em
+          width: 1em
+          background: #77991F
+          display: block
+          position: absolute
+          left: -1.5em
+          top: 2px
 
