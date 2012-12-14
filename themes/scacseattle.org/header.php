@@ -68,7 +68,7 @@
       </div>
       
       <div class="csl-container">
-        <a href="http://chinese.scacseattle.org/" class="chinese-service-link">Chinese</a>
+        <a href="http://chinese.scacseattle.org/" class="chinese-service-link">中國服務</a>
       </div>
     </div>
 

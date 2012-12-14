@@ -37,7 +37,13 @@ get_header(); ?>
              * If you want to overload this in a child theme then include a file
              * called content-___.php (where ___ is the Post Format name) and that will be used instead.
              */
-            get_template_part( 'content', 'sermons', get_post_format() );
+            get_template_part( 'content', 'sermon', get_post_format() );
+          ?>
+
+          <?php
+            // If comments are open or we have at least one comment, load up the comment template
+            if ( comments_open() || '0' != get_comments_number() )
+              comments_template( '', true );
           ?>
 
         <?php endwhile; ?>
