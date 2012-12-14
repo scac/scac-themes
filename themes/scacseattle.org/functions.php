@@ -30,10 +30,10 @@ die ('<h1>Access Denied</h1>');
 
 // Define theme location for bundled plugins
 if(!defined('WP_THEME_URL')) {
-	define( 'WP_THEME_URL', get_stylesheet_directory_uri());
+	define( 'WP_THEME_URL', get_template_directory_uri());
 }
 if(!defined('WP_THEME_DIR')) {
-	define( 'WP_THEME_DIR', get_stylesheet_directory());
+	define( 'WP_THEME_DIR', get_template_directory());
 }
 
 require_once ( WP_THEME_DIR . '/config.php' );
