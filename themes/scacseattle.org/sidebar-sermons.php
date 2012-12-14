@@ -11,9 +11,28 @@
       foreach ($terms as $term) {
         $current_series = get_the_term_list('', 'sermon_series');
         
-          ?>
-          <li class="page_item <?php echo ($global_term->slug == $term->slug ? "current_page_item" : ""); ?>"><a href="<?php echo get_term_link($term); ?>"><span class="active-box"></span><?php echo $term->name; ?></a></li>
+        ?>
+        <li class="page_item <?php echo ($global_term->slug == $term->slug ? "current_page_item" : ""); ?>">
+          <a href="<?php echo get_term_link($term); ?>"><span class="active-box"></span><?php echo $term->name; ?></a>
           <?php
+            if(false && $global_term->slug == $term->slug) :
+              ?>
+              <ul class="sidebar-page-listing">
+                <?php 
+                  $args = array(
+                    'post_type' => 'ct_sermon',
+                    'ct_sermon' => $term->slug
+
+                  );
+                  $posts = get_posts($args);
+                  var_dump($posts);
+                ?>
+              </ul>
+              <?php
+            endif;
+          ?>
+        </li>
+        <?php
         
       }
     ?>
