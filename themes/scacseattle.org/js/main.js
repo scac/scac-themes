@@ -1,5 +1,7 @@
 
 jQuery(function ($) {
+
+  /*** Search Box ***/
   $('#s').focus(function () {
     if ($(this).val() == "Search")
       $(this).val("");
@@ -10,6 +12,8 @@ jQuery(function ($) {
       $(this).val("Search");
   });
 
+
+  /*** Address Box ***/
   $("#startAddr").focus(function () {
     if ($(this).val() == "From")
       $(this).val("");
@@ -19,6 +23,16 @@ jQuery(function ($) {
     if ($(this).val() == "")
       $(this).val("From");
   });
+
+  /*** Navbar Hovers ***/
+  $('.nav-item').hover(
+    function () {
+      $(this).children("a").children("span").addClass("nav_hover");
+    },
+    function () {
+      $(this).children("a").children("span").removeClass("nav_hover");
+    }
+  );
 
 
   $(window).load(function() {

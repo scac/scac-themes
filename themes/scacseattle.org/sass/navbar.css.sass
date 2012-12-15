@@ -9,13 +9,7 @@
       padding: 0 0 20px 0px
       display: table-row
       width: 100%
-      .active_tab
-        border-top: 7px solid $active-link-color
-        position: absolute
-        display: block
-        width: 100%
-        top: 0px
-        left: 0px
+
       .nav-item
         display: table-cell
         width: 20%
@@ -25,10 +19,19 @@
 
         a
           padding: 20px 0px
-          margin: 0 4%
           text-transform: uppercase
           color: black
           font-size: 12px
 
-          &:hover
-            color: #AAA
+          .nav_hover, .active_tab
+            position: absolute
+            display: block
+            width: 100%
+            top: 0px
+            left: 0px
+
+          .active_tab
+            border-top: 7px solid $active-link-color
+
+          .nav_hover
+            border-top: 7px solid $nav-hover-color

@@ -69,13 +69,6 @@
       padding: 0 0 20px 0px;
       display: table-row;
       width: 100%; }
-      .primary-nav-container #primary-nav .navbar .active_tab {
-        border-top: 7px solid #77991f;
-        position: absolute;
-        display: block;
-        width: 100%;
-        top: 0px;
-        left: 0px; }
       .primary-nav-container #primary-nav .navbar .nav-item {
         display: table-cell;
         width: 20%;
@@ -84,12 +77,19 @@
         text-align: center; }
         .primary-nav-container #primary-nav .navbar .nav-item a {
           padding: 20px 0px;
-          margin: 0 4%;
           text-transform: uppercase;
           color: black;
           font-size: 12px; }
-          .primary-nav-container #primary-nav .navbar .nav-item a:hover {
-            color: #aaaaaa; }
+          .primary-nav-container #primary-nav .navbar .nav-item a .nav_hover, .primary-nav-container #primary-nav .navbar .nav-item a .active_tab {
+            position: absolute;
+            display: block;
+            width: 100%;
+            top: 0px;
+            left: 0px; }
+          .primary-nav-container #primary-nav .navbar .nav-item a .active_tab {
+            border-top: 7px solid #77991f; }
+          .primary-nav-container #primary-nav .navbar .nav-item a .nav_hover {
+            border-top: 7px solid #77991f; }
 
 .site-footer {
   position: relative;

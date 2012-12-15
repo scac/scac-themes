@@ -19,7 +19,7 @@ define( 'CHURCHTHEMES_OPTIONS_LOGO_HEIGHT', 25 );
 define( 'CHURCHTHEMES_OPTIONS_LOGO_TOP_MARGIN', 32 );
 
 // Custom background
-define( 'CHURCHTHEMES_DEFAULT_BACKGROUND_IMAGE',  WP_THEME_DIR . '/images/bg_body.jpg'  );
+// define( 'CHURCHTHEMES_DEFAULT_BACKGROUND_IMAGE',  WP_THEME_DIR . '/images/bg_body.jpg'  );
 define( 'CHURCHTHEMES_DEFAULT_BACKGROUND_COLOR', 'd9d9d1' );
 
 // Update script
