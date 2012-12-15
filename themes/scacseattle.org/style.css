@@ -73,10 +73,11 @@
         display: table-cell;
         width: 20%;
         position: relative;
-        padding: 20px;
         text-align: center; }
         .primary-nav-container #primary-nav .navbar .nav-item a {
           padding: 20px 0px;
+          width: 100%;
+          display: block;
           text-transform: uppercase;
           color: black;
           font-size: 12px; }
@@ -247,7 +248,10 @@
 .sermon-series-listings {
   width: 100%; }
   .sermon-series-listings td {
-    height: 80px; }
+    height: 150px; }
+    .sermon-series-listings td .series-img-container {
+      margin: 0 0 15px;
+      text-align: center; }
 
 .sermon-post {
   margin-bottom: 20px;

@@ -1,6 +1,7 @@
 <?php
 global $post;
-$church_page = get_page_by_title('church')
+$church_page = get_page_by_title('church');
+$ministries_page = get_page_by_title('ministries');
 ?>
 
 <div class="primary-nav-container">
@@ -16,7 +17,12 @@ $church_page = get_page_by_title('church')
           Visit
         </a>
       </td>
-      <td class="nav-item disabled"><a href="#">Ministries</a></td>
+      <td class="nav-item">
+        <a href="<?php echo home_url("/ministries/"); ?>">
+          <span class="<?php echo (is_page('ministries') || $post->post_parent == $ministries_page->ID ? "active_tab" : "");?>"></span>
+          Ministries
+        </a>
+      </td>
       <td class="nav-item"><a href="<?php echo home_url("/sermons/"); ?>">
         <span class="<?php echo (get_post_type() == 'ct_sermon' ? "active_tab" : "");?>"></span>
         Sermons</a>

@@ -25,12 +25,22 @@ get_header(); ?>
             <tr>
               <?php 
                 if ( 'ct_sermon' == get_post_type() ) :
+                  global $nggdb;
                   $taxonomy = 'sermon_series';
                   $terms = get_terms($taxonomy);
                   foreach ($terms as $k => $term) {
                     $current_series = get_the_term_list('', 'sermon_series');
                     ?>
-                      <td><a href="<?php echo get_term_link($term); ?>"><?php echo $term->name; ?></a></td>
+                      <td>
+                        <?php 
+                          if(isset($nggdb)){
+                            $img = $nggdb->find_image($term->slug); 
+                          }
+                        ?>
+                        <div class="series-img-container"><?php echo $img->imageHTML; ?></div>
+                        <div class="series-img-link"><a href="<?php echo get_term_link($term); ?>"><?php echo $term->name; ?></a></div>
+                        <div class="series-img-descripton"><?php echo $img->description; ?></div>
+                      </td>
                     <?php
                     if(($k+1)%3 == 0)
                       echo "</tr><tr>"; //make a new row every 3rd sermon
