@@ -1,13 +1,3 @@
-        <div class="content-from-container clearfix">
-          <div class="col-left">
-          </div>
-
-          <div class="col-right">
-
-          </div>
-        </div>
-
-
 <?php
 /**
  * @package scacseattle.org
@@ -15,44 +5,22 @@
  */
 ?>
 
-<article id="post-<?php the_ID(); ?>" <?php post_class("sermon-post"); ?>>
+<article id="post-<?php the_ID(); ?>" <?php post_class("ministry-page"); ?>>
   <header class="entry-header">
-    
+  
+  <div class="content-from-container clearfix">
+    <div class="col-left">
+      <?php echo apply_filters('the_content', '[contact-form-7 id="916" title="Get Connected - TG"]'); ?>
+    </div>
 
-    <div class="entry-meta"> 
-      <?php if (get_post_type() == 'ct_sermon') : ?>
-        <span class="sermon-speaker">
-          <?php echo get_the_term_list($post->ID, 'sermon_speaker'); ?>,
-        </span>
-      <?php endif; ?>
+    <div class="col-right">
+      <div class="entry-content">
+        <?php the_content(); ?>
+        <?php wp_link_pages( array( 'before' => '<div class="page-links">' . __( 'Pages:', '_s' ), 'after' => '</div>' ) ); ?>
+      </div><!-- .entry-content -->
+    </div>
+  </div>
 
-      <?php the_time('M j, Y'); ?>
-      
-      <div class="comments-cnt">
-        <a href="<?php comments_link(); ?>" class="comments-link">
-        <?php 
-        $ccnt = get_comments_number();
-        switch($ccnt){
-          case 0:
-            echo "No Comments";
-            break;
-          case 1:
-            echo "1 Comment";
-            break;
-          default:
-            echo "$ccnt Comments";
-            break;
-        }
-        ?>
-        </a>
-      </div>
-    </div><!-- .entry-meta -->
-  </header><!-- .entry-header -->
-
-  <div class="entry-content">
-    <?php the_content(); ?>
-    <?php wp_link_pages( array( 'before' => '<div class="page-links">' . __( 'Pages:', '_s' ), 'after' => '</div>' ) ); ?>
-  </div><!-- .entry-content -->
 
   <footer class="entry-meta">
     <?php

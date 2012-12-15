@@ -326,6 +326,13 @@
         left: -1.5em;
         top: 2px; }
 
+.ministry-page .col-left {
+  float: left;
+  width: 30%; }
+.ministry-page .col-right {
+  float: left;
+  width: 70%; }
+
 body {
   font-family: "Open Sans", sans-serif, Arial;
   font-size: 12px;
