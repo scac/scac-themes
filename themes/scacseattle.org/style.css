@@ -69,28 +69,29 @@
       padding: 0 0 20px 0px;
       display: table-row;
       width: 100%; }
-      .primary-nav-container #primary-nav .navbar .nav-item {
+      .primary-nav-container #primary-nav .navbar .nav-item-td {
         display: table-cell;
-        width: 20%;
-        position: relative;
-        text-align: center; }
-        .primary-nav-container #primary-nav .navbar .nav-item a {
-          padding: 20px 0px;
-          width: 100%;
-          display: block;
-          text-transform: uppercase;
-          color: black;
-          font-size: 12px; }
-          .primary-nav-container #primary-nav .navbar .nav-item a .nav_hover, .primary-nav-container #primary-nav .navbar .nav-item a .active_tab {
-            position: absolute;
-            display: block;
+        width: 20%; }
+        .primary-nav-container #primary-nav .navbar .nav-item-td .nav-item {
+          position: relative;
+          text-align: center; }
+          .primary-nav-container #primary-nav .navbar .nav-item-td .nav-item a {
+            padding: 20px 0px;
             width: 100%;
-            top: 0px;
-            left: 0px; }
-          .primary-nav-container #primary-nav .navbar .nav-item a .active_tab {
-            border-top: 7px solid #77991f; }
-          .primary-nav-container #primary-nav .navbar .nav-item a .nav_hover {
-            border-top: 7px solid #77991f; }
+            display: block;
+            text-transform: uppercase;
+            color: black;
+            font-size: 12px; }
+            .primary-nav-container #primary-nav .navbar .nav-item-td .nav-item a .nav_hover, .primary-nav-container #primary-nav .navbar .nav-item-td .nav-item a .active_tab {
+              position: absolute;
+              display: block;
+              width: 100%;
+              top: -1px;
+              left: 0px; }
+            .primary-nav-container #primary-nav .navbar .nav-item-td .nav-item a .active_tab {
+              border-top: 7px solid #77991f; }
+            .primary-nav-container #primary-nav .navbar .nav-item-td .nav-item a .nav_hover {
+              border-top: 7px solid #77991f; }
 
 .site-footer {
   position: relative;
@@ -193,7 +194,7 @@
     border: 1px solid #cccccc;
     background: #eeeeee; }
     .map-directions form input[type='text'] {
-      width: 293px; }
+      width: 290px; }
     .map-directions form input[type='submit'] {
       border: 0;
       padding: 7px;
@@ -205,11 +206,6 @@
   width: 20%;
   float: left;
   margin-top: -1em; }
-
-.page {
-  padding: 0 10px; }
-  .page h1 a {
-    color: #444444; }
 
 .page-church {
   width: 100%; }
@@ -269,20 +265,19 @@
 .social.sermons ul li {
   list-style-type: none; }
 
-#primary {
-  width: 75%;
-  float: left; }
-
-.sidebar-right {
-  width: 25%;
-  float: left; }
-
 .post-divider {
   width: 100%;
   height: 1px;
   display: block;
   background: #cccccc;
   margin-top: 15px; }
+
+#primary {
+  width: 75%;
+  float: left;
+  padding: 0 10px; }
+  #primary h1 a {
+    color: #444444; }
 
 .page blockquote, .post blockquote {
   font-size: 20px;
@@ -293,6 +288,10 @@
   margin-top: 0;
   padding-top: 0; }
 .page .alignleft, .post .alignleft {
+  float: left; }
+
+.sidebar-right {
+  width: 22%;
   float: left; }
 
 .sidebar {
@@ -355,7 +354,8 @@ a {
 
 table, tr, td {
   border-spacing: 0;
-  border-collapse: collapse; }
+  border-collapse: collapse;
+  padding: 0; }
 
 .disabled a {
   color: #cccccc !important;

@@ -12,11 +12,12 @@ get_header(); ?>
         
         <?php if ( has_post_thumbnail() ) : ?>
           <div class="post-img-header">
-            <?php the_post_thumbnail('full'); ?>
+            <?php 
+              $image_src = wp_get_attachment_image_src( get_post_thumbnail_id(),'full' );
+              echo '<img src="' . $image_src[0]  . '" width="100%"  />';
+            ?>
           </div>
         <?php endif; ?>
-
-
 
         <?php if ( have_posts() ) : ?>
 

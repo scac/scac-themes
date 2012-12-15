@@ -10,29 +10,32 @@
       display: table-row
       width: 100%
 
-      .nav-item
+      .nav-item-td
         display: table-cell
         width: 20%
-        position: relative
-        text-align: center
+        
+        
 
-        a
-          padding: 20px 0px
-          width: 100%
-          display: block
-          text-transform: uppercase
-          color: black
-          font-size: 12px
-
-          .nav_hover, .active_tab
-            position: absolute
-            display: block
+        .nav-item
+          position: relative
+          text-align: center
+          a
+            padding: 20px 0px
             width: 100%
-            top: 0px
-            left: 0px
+            display: block
+            text-transform: uppercase
+            color: black
+            font-size: 12px
 
-          .active_tab
-            border-top: 7px solid $active-link-color
+            .nav_hover, .active_tab
+              position: absolute
+              display: block
+              width: 100%
+              top: -1px
+              left: 0px
 
-          .nav_hover
-            border-top: 7px solid $nav-hover-color
+            .active_tab
+              border-top: 7px solid $active-link-color
+
+            .nav_hover
+              border-top: 7px solid $nav-hover-color
