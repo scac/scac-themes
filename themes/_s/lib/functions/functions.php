@@ -54,7 +54,7 @@ if ( !isset( $content_width ) ) {
 // Register the scripts
 function churchthemes_register() {
 	wp_register_style( 'churchthemes-main', get_stylesheet_uri(), array(), '1.2' );
-	wp_register_style( 'churchthemes-scheme', WP_THEME_URL . '/lib/scripts/scheme.php', array( 'churchthemes-main' ), false );
+	// wp_register_style( 'churchthemes-scheme', WP_THEME_URL . '/lib/scripts/scheme.php', array( 'churchthemes-main' ), false );
 	wp_register_style( 'churchthemes-admin', WP_THEME_URL . '/lib/admin/css/admin.css', array(), false );
 	wp_register_script( 'churchthemes-slider', WP_THEME_URL . '/lib/scripts/jquery.flexslider.min.js', array( 'jquery' ), '2.0', true );
 	wp_register_script( 'churchthemes-selectbox', WP_THEME_URL . '/lib/scripts/jquery.selectbox.min.js', array( 'jquery' ), '0.5', true );
