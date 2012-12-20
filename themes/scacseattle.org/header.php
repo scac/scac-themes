@@ -50,12 +50,20 @@
 <div id="page" class="hfeed site container">
   <?php do_action( 'before' ); ?>
   <header id="masthead" class="site-header" role="banner">
-    <div class="clearfix">
-      <hgroup class="">
+    <div class="clearfix row1">
+      <hgroup class="site-name">
         <?php if(is_home() || is_page('Homepage')) : ?>
-          <h1 class="site-title"><a href="<?php echo home_url( '/' ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
+          <h1 class="site-title">
         <?php else : ?>
-          <h2 class="site-title"><a href="<?php echo home_url( '/' ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h2>
+          <h2 class="site-title">
+        <?php endif; ?>
+
+        <a href="<?php echo home_url( '/' ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><div class="site-name-top">Seattle Chinese</div><div class="site-name-bottom">Alliance Church</div></a></h1>
+        
+        <?php if(is_home() || is_page('Homepage')) : ?>
+          </h1>
+        <?php else : ?>
+          </h2>
         <?php endif; ?>
       </hgroup>
 

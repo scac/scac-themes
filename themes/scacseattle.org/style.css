@@ -18,27 +18,46 @@
  *
  *
  */
+@font-face {
+  font-family: "eau_sans_book";
+  src: local("bingo");
+  src: url("fonts/eau_sans_book.otf") format("opentype"); }
+
+@font-face {
+  font-family: "eau_sans_book_osf";
+  src: local("bingo");
+  src: url("fonts/eau_sans_book_osf.otf") format("opentype"); }
+
+.row1 {
+  height: 65px; }
+
 .site-header {
   margin: 15px 0 0 0; }
 
 .site-title {
   font-size: 20px;
   float: left;
-  font-weight: bolder; }
+  position: relative; }
+  .site-title .site-name-top {
+    position: relative;
+    top: 0px;
+    left: 10px; }
+  .site-title .site-name-bottom {
+    position: relative;
+    top: 5px;
+    left: 50px; }
   .site-title a {
     color: black; }
 
 .csl-container {
   float: right;
+  font-size: 16px;
   position: relative;
-  top: 17px;
+  top: 30px;
   right: 22px; }
 
-.chinese-service-link {
-  text-transform: uppercase; }
-
 .site-search {
-  margin: 10px 0 0 0;
+  margin: 20px 0 0 0;
   float: right;
   background: #efefef;
   -webkit-border-radius: 6px 6px;
@@ -81,7 +100,7 @@
             display: block;
             text-transform: uppercase;
             color: black;
-            font-size: 12px; }
+            font-size: 15px; }
             .primary-nav-container #primary-nav .navbar .nav-item-td .nav-item a .nav_hover, .primary-nav-container #primary-nav .navbar .nav-item-td .nav-item a .active_tab {
               position: absolute;
               display: block;
@@ -134,7 +153,7 @@
   min-height: 300px;
   border: 0px;
   overflow: hidden;
-  margin: 30px 0 30px 0; }
+  margin: 15px 0 30px 0; }
   .flexslider .flex-control-nav {
     bottom: 10px; }
   .flexslider .flex-control-paging li a {
@@ -279,7 +298,14 @@
   #primary h1 a {
     color: #444444; }
 
+.page .entry-content h2, .page .entry-content h3, .page .entry-content h4, .page .entry-content h5, .post .entry-content h2, .post .entry-content h3, .post .entry-content h4, .post .entry-content h5 {
+  color: #77991f; }
+.page .entry-content h4, .post .entry-content h4 {
+  margin: 15px 0 0px; }
+.page .entry-content p, .post .entry-content p {
+  margin: 0.5em 0 1em; }
 .page blockquote, .post blockquote {
+  line-height: 30px;
   font-size: 20px;
   border: 0;
   margin: 0;
@@ -356,8 +382,9 @@
   width: 100px; }
 
 body {
-  font-family: "Open Sans", sans-serif, Arial;
+  font-family: "eau_sans_book_osf", "Open Sans", sans-serif, Arial;
   font-size: 12px;
+  line-height: 16px;
   margin: 0px;
   color: #444444; }
 
