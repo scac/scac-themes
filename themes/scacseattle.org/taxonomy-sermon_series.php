@@ -19,7 +19,7 @@ if( is_tax() ) {
 
 get_header(); ?>
 
-    <section id="primary" class="content-area">
+    <section id="primary" class="content-area page-sermon-series">
       <div id="content" class="site-content" role="main">
 
       <?php if ( have_posts() ) : ?>
@@ -27,6 +27,18 @@ get_header(); ?>
         <header class="page-header">
           <h1 class="page-title"><?php echo $tax_title; ?></h1>
 
+          <div class="series-banner">
+            <?php 
+              global $nggdb, $wp_query;
+              $global_term = $wp_query->get_queried_object();
+              if(isset($nggdb)){
+                $img = $nggdb->find_image($global_term->slug . "_banner");
+              }
+              // if(isset($img)) :
+            ?>
+              <img src="<?php echo $img->imageURL; ?>">
+              <?php // endif; ?>
+          </div>
         </header><!-- .page-header -->
 
         <?php /* Start the Loop */ ?>

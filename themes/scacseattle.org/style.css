@@ -242,8 +242,9 @@
 .sermon-list-post {
   border-bottom: 2px solid #cccccc;
   margin: 0 0 20px;
-  padding: 0 0 20px;
-  width: 95%; }
+  padding: 0 0 20px; }
+  .sermon-list-post:last-child {
+    border: none; }
   .sermon-list-post .entry-header {
     margin: 0 0 10px; }
   .sermon-list-post .entry-title-container {
@@ -264,9 +265,9 @@
   width: 100%; }
   .sermon-series-listings td {
     height: 150px; }
-    .sermon-series-listings td .series-img-container {
-      margin: 0 0 15px;
-      text-align: center; }
+
+.page-sermon-series .page-header {
+  margin: 0 0 2em; }
 
 .sermon-post {
   margin-bottom: 20px;
