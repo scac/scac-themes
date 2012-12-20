@@ -334,6 +334,12 @@
 .ministry-page .wpcf7 h5 {
   margin: 1em 0 0 0;
   font-size: 14px; }
+.ministry-page .wpcf7 .ministry-contact-input select {
+  width: 260px;
+  height: 35px;
+  background: #efefef;
+  border: 0;
+  margin: 5px 0px; }
 .ministry-page .wpcf7 .ministry-contact-input input[type='text'] {
   background: #efefef;
   border: 0;

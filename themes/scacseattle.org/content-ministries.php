@@ -23,22 +23,25 @@
       <div class="ministry-contact-input"><span class="wpcf7-form-control-wrap your-email"><input type="text" name="your-email" value="" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email" default-value="Email"/></span></div>
       <div class="ministry-contact-input"><span class="wpcf7-form-control-wrap phonenumber"><input type="text" name="phonenumber" value="" class="wpcf7-form-control wpcf7-text" default-value="Phone Number"/></span></div>
       <div class="ministry-contact-input">
-        <span class="wpcf7-form-control-wrap ministry"><select name="ministry-disabled" value="<?php the_title()?>" class="wpcf7-form-control wpcf7-text"/>
-          <?php
-            $page = get_page_by_title('ministries');
-            $args = array(
-              'child_of' => $page->ID,
-              'post_status' => 'publish',
-              'post_type' => 'page',
-              'sort_order' => 'DESC',
-            );
+        <span class="wpcf7-form-control-wrap ministry">
+          <select name="ministry" value="<?php the_title()?>" class="wpcf7-form-control wpcf7-text"/>
+            <option value="">Select a Ministry</option>
+            <?php
+              $page = get_page_by_title('ministries');
+              $args = array(
+                'child_of' => $page->ID,
+                'post_status' => 'publish',
+                'post_type' => 'page',
+                'sort_order' => 'DESC',
+              );
 
-            $pages = get_pages($args);
-            foreach($pages as $p) :
-          ?>
+              $pages = get_pages($args);
+              foreach($pages as $p) :
+            ?>
             <option value="<?php echo get_the_title($p);?>"><?php echo get_the_title($p);?></option>
           <?php endforeach; ?>
-        </select></span>
+          </select>
+        </span>
       </div>
       <div class="ministry-contact-input"><input type="submit" value="Send" class="wpcf7-form-control  wpcf7-submit" /></div>
       <div class="wpcf7-response-output wpcf7-display-none"></div></form></div>
