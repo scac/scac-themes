@@ -34,6 +34,24 @@ jQuery(function ($) {
     }
   );
 
+  /*** Ministry Forms ***/
+  $(document).ready(function(){
+    $('.wpcf7-form-control').each(function(){
+      if($(this).val() == "")
+        $(this).val($(this).attr("default-value"));
+      
+    });  
+  });
+  
+  $(".wpcf7-form-control").focus(function () {
+    if ($(this).val() == $(this).attr("default-value"))
+      $(this).val("");
+  });
+
+  $(".wpcf7-form-control").blur(function () {
+    if ($(this).val() == "")
+      $(this).val($(this).attr("default-value"));
+  });
 
   $(window).load(function() {
       $(".flexslider").flexslider({

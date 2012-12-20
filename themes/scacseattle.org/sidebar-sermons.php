@@ -1,7 +1,7 @@
 <!-- This draws out the sermon series topics. -->
 <?php if ( 'ct_sermon' == get_post_type() ) : ?>
   <div class="sidebar sidebar-right right-sermons-nav">
-    <h3 class="sidebar-title">Sermon Series</h3>
+    <h3 class="sidebar-title"><a href="<?php echo home_url("/sermons/"); ?>">Sermon Series</a></h3>
     <ul class="sidebar-page-listing">
     <?php
       global $wp_query, $post;

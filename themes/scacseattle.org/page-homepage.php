@@ -50,7 +50,7 @@ get_header(); ?>
               <?php
                 global $nggdb;
                 if(isset($nggdb)): 
-                  $img = array_shift($nggdb->get_gallery(2)); //only take the first image anyway
+                  $img = array_shift($nggdb->get_gallery('announcements-images')); //only take the first image anyway
 
                   if(isset($img)){
                     echo '<img src="' . $img->imageURL . '" alt="' . $img->alttext . '" class="announcement-img">';  

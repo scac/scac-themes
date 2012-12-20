@@ -97,7 +97,7 @@
   position: relative;
   background: #eceded;
   width: 100%;
-  padding: 0 0 80px 0;
+  padding: 0 0 40px 0;
   margin: 40px 0 0 0; }
   .site-footer .copyright {
     color: #777777;
@@ -327,10 +327,27 @@
 
 .ministry-page .col-left {
   float: left;
-  width: 30%; }
+  width: 40%; }
 .ministry-page .col-right {
-  float: left;
-  width: 70%; }
+  float: right;
+  width: 60%; }
+.ministry-page .wpcf7 h5 {
+  margin: 1em 0 0 0;
+  font-size: 14px; }
+.ministry-page .wpcf7 .ministry-contact-input input[type='text'] {
+  background: #efefef;
+  border: 0;
+  padding: 10px;
+  margin: 5px 0px;
+  width: 240px; }
+.ministry-page .wpcf7 .ministry-contact-input .wpcf7-submit {
+  background: #77991f;
+  color: white;
+  font-weight: bold;
+  border: 0;
+  padding: 8px;
+  margin: 5px 0px;
+  width: 100px; }
 
 body {
   font-family: "Open Sans", sans-serif, Arial;

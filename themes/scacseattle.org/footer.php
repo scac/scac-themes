@@ -27,8 +27,37 @@
             ?>
           </ul>
         </li>
-        <li>
+        <li class="listing-headers">
           <a href="<?php echo home_url("/visit/"); ?>" class="footer-main-link">Visit</a>
+        </li>
+        <li class="listing-headers">
+          <a href="<?php echo home_url("/ministries/"); ?>" class="footer-main-link">Ministries</a>
+          <ul class="footer-listings">
+            <?php 
+              $page = get_page_by_title('ministries');
+              wp_list_pages(array(
+                'title_li'    => '',
+                'child_of'    => $page->ID,
+              ));
+            ?>
+          </ul>
+        </li>
+        <li class="listing-headers">
+          <a href="<?php echo home_url("/sermons/"); ?>" class="footer-main-link">Sermons</a>
+          <ul class="footer-listings">
+            <?php 
+              $taxonomy = 'sermon_series';
+              $terms = get_terms($taxonomy);
+              for($i=0;$i < 5; $i++) :
+                $term = $terms[$i];
+            ?>
+                <li class="page_item <?php echo ($global_term->slug == $term->slug ? "current_page_item" : ""); ?>">
+                  <a href="<?php echo get_term_link($term); ?>"><span class="active-box"></span><?php echo $term->name; ?></a>
+                </li>
+            <?php
+              endfor;
+            ?>
+          </ul>
         </li>
       </ul>
 

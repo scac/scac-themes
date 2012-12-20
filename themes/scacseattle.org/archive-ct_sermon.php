@@ -37,7 +37,7 @@ get_header(); ?>
                             $img = $nggdb->find_image($term->slug); 
                           }
                         ?>
-                        <div class="series-img-container"><?php echo $img->imageHTML; ?></div>
+                        <div class="series-img-container"><a href="<?php echo get_term_link($term); ?>"><img src="<?php echo $img->imageURL; ?>"></a></div>
                         <div class="series-img-link"><a href="<?php echo get_term_link($term); ?>"><?php echo $term->name; ?></a></div>
                         <div class="series-img-descripton"><?php echo $img->description; ?></div>
                       </td>

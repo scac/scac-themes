@@ -2,7 +2,7 @@
 <div class="sidebar sidebar-right">
   <div class="col-right">
     <div class="sidebar sidebar-church">
-      <h3 class="sidebar-title">Church</h3>
+      <h3 class="sidebar-title"><a href="<?php echo home_url("/church/our-vision/"); ?>">Church</a></h3>
       <ul class="sidebar-page-listing">
         <?php 
           $page = get_page_by_title('church');

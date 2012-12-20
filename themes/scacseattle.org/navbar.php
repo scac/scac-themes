@@ -31,10 +31,12 @@ $ministries_page = get_page_by_title('ministries');
           </a>
         </div>
       </td>
-      <td class="nav-item-td"><a href="<?php echo home_url("/sermons/"); ?>">
+      <td class="nav-item-td">
         <div class="nav-item">
-          <span class="<?php echo (get_post_type() == 'ct_sermon' ? "active_tab" : "");?>"></span>
-          Sermons</a>
+          <a href="<?php echo home_url("/sermons/"); ?>">
+            <span class="<?php echo (get_post_type() == 'ct_sermon' ? "active_tab" : "");?>"></span>
+            Sermons
+          </a>
         </div>
       </td>
       <td class="nav-item-td disabled">
