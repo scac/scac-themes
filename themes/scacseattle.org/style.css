@@ -37,7 +37,8 @@
 .site-title {
   font-size: 20px;
   float: left;
-  position: relative; }
+  position: relative;
+  font-weight: normal; }
   .site-title .site-name-top {
     position: relative;
     top: 0px;
@@ -171,6 +172,15 @@
     .info-area .info-row .info-cell {
       width: 20%;
       vertical-align: top; }
+      .info-area .info-row .info-cell .info-cell-container {
+        width: 90%; }
+        .info-area .info-row .info-cell .info-cell-container .latest-sermon-img {
+          margin: 0 0 10px; }
+        .info-area .info-row .info-cell .info-cell-container .latest-sermon-title {
+          font-size: 20px;
+          line-height: 25px; }
+        .info-area .info-row .info-cell .info-cell-container .latset-sermon-date {
+          color: #777777; }
       .info-area .info-row .info-cell .service-time {
         padding-right: 5px; }
     .info-area .info-row .info-header {
@@ -264,7 +274,9 @@
 .sermon-series-listings {
   width: 100%; }
   .sermon-series-listings td {
-    height: 150px; }
+    height: 150px;
+    vertical-align: top;
+    padding: 0 0 15px; }
 
 .page-sermon-series .page-header {
   margin: 0 0 2em; }
@@ -297,7 +309,8 @@
   float: left;
   padding: 0 10px; }
   #primary h1 a {
-    color: #444444; }
+    color: #444444;
+    line-height: 20px; }
 
 .page .entry-content h2, .page .entry-content h3, .page .entry-content h4, .page .entry-content h5, .post .entry-content h2, .post .entry-content h3, .post .entry-content h4, .post .entry-content h5 {
   color: #77991f; }
@@ -350,7 +363,7 @@
         display: block;
         position: absolute;
         left: -1.5em;
-        top: 2px; }
+        top: 0px; }
 
 .ministry-page .col-left {
   float: left;
