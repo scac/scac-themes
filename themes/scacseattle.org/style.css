@@ -217,7 +217,7 @@
 .map-directions h2 {
   margin-top: 20px; }
 .map-directions form {
-  margin: 20px 0 40px 0; }
+  margin: 20px 0 20px 0; }
   .map-directions form input {
     padding: 7px;
     border: 1px solid #cccccc;
@@ -307,7 +307,7 @@
 #primary {
   width: 75%;
   float: left;
-  padding: 0 10px; }
+  padding: 0 0px; }
   #primary h1 a {
     color: #444444;
     line-height: 20px; }
@@ -346,7 +346,7 @@
     .sidebar .sidebar-page-listing li {
       margin-bottom: 0.5em; }
     .sidebar .sidebar-page-listing a {
-      font-size: 11px;
+      font-size: 12px;
       position: relative;
       color: #444444; }
     .sidebar .sidebar-page-listing .sidebar-sub-page-listing {
@@ -375,7 +375,7 @@
   margin: 1em 0 0 0;
   font-size: 14px; }
 .ministry-page .wpcf7 .ministry-contact-input select {
-  width: 260px;
+  width: 180px;
   height: 35px;
   background: #efefef;
   border: 0;
@@ -385,7 +385,7 @@
   border: 0;
   padding: 10px;
   margin: 5px 0px;
-  width: 240px; }
+  width: 180px; }
 .ministry-page .wpcf7 .ministry-contact-input .wpcf7-submit {
   background: #77991f;
   color: white;
@@ -397,7 +397,7 @@
 
 body {
   font-family: "eau_sans_book_osf", "Open Sans", sans-serif, Arial;
-  font-size: 12px;
+  font-size: 13px;
   line-height: 16px;
   margin: 0px;
   color: #444444; }

@@ -28,10 +28,17 @@ get_header(); ?>
 		</div>
 		<div class="col-one-third">
 			<p>
-				Seattle Chinese Alliance Church<br />
+        <b>Seattle Chinese Alliance Church</b><br />
 				2803 S. Orcas St.<br />
 				Seattle, WA 98108
 			</p>
+      <p>
+        <b>Join us for Sunday Service</b>
+        <br />
+        8:30am - Cantonese Service 1<br />
+        10:00am - English Ministries Service<br />
+        11:30am - Cantonese Service 2
+      </p>
 			<p>
 				<b>Contact Us</b><br />
 				Main building<br />
