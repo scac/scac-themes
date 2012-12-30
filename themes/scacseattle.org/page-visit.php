@@ -32,23 +32,23 @@ get_header(); ?>
 				2803 S. Orcas St.<br />
 				Seattle, WA 98108
 			</p>
+			<p>
+				<b>Contact Us</b><br />
+				Main building<br />
+				(206) 725-0771 ext. 10<br />
+				<a href="mailto:pollywong@scacseattle.org" class="email-link">Polly Wong</a>
+			</p>
+			<p>
+				(206) 725-0771 ext. 11<br />
+				<a href="mailto:bettywong@scacseattle.org" class="email-link">Betty Wong</a>
+			</p>
       <p>
-        <b>Join us for Sunday Service</b>
+        <b>Service Times</b>
         <br />
         8:30am - Cantonese Service 1<br />
         10:00am - English Ministries Service<br />
         11:30am - Cantonese Service 2
       </p>
-			<p>
-				<b>Contact Us</b><br />
-				Main building<br />
-				(206) 725-0771 ext. 10<br />
-				<a href="mailto:pollywong@scacseattle.org">Polly Wong</a>
-			</p>
-			<p>
-				(206) 725-0771 ext. 11<br />
-				<a href="mailto:bettywong@scacseattle.org">Betty Wong</a>
-			</p>
 		</div>
 		<div class="clear"></div>
 

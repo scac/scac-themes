@@ -101,23 +101,23 @@
             display: block;
             text-transform: uppercase;
             color: black;
-            font-size: 15px; }
+            font-size: 16px; }
             .primary-nav-container #primary-nav .navbar .nav-item-td .nav-item a .nav_hover, .primary-nav-container #primary-nav .navbar .nav-item-td .nav-item a .active_tab {
               position: absolute;
               display: block;
               width: 100%;
               top: -1px;
               left: 0px; }
-            .primary-nav-container #primary-nav .navbar .nav-item-td .nav-item a .active_tab {
-              border-top: 7px solid #77991f; }
-            .primary-nav-container #primary-nav .navbar .nav-item-td .nav-item a .nav_hover {
-              border-top: 7px solid #77991f; }
+            .primary-nav-container #primary-nav .navbar .nav-item-td .nav-item.active_tab {
+              background-color: #77991f; }
+            .primary-nav-container #primary-nav .navbar .nav-item-td .nav-item.nav_hover {
+              background-color: #B8C686; }
 
 .site-footer {
   position: relative;
   background: #eceded;
   width: 100%;
-  padding: 0 0 40px 0;
+  padding: 0 0 10px 0;
   margin: 40px 0 0 0; }
   .site-footer .copyright {
     color: #777777;
@@ -134,9 +134,11 @@
       .site-footer .links-container ul .listing-headers {
         float: left; }
       .site-footer .links-container ul li {
-        margin: 0 20px 0px 0; }
+        margin: 0 20px 0px 0;
+        min-width: 50px; }
         .site-footer .links-container ul li .footer-listings li a {
-          color: #777777; }
+          color: #777777;
+          font-size: 11px; }
     .site-footer .links-container .footer-main-link {
       text-transform: uppercase;
       color: #444444;
@@ -248,6 +250,16 @@
   .page-church h2 {
     font-size: 16px;
     font-weight: normal; }
+  h2.right-aligned {
+  	font-size: 17px;
+  	font-weight: bold;
+  }
+  h2.pastors.right-aligned {
+  	margin-left: 134px;
+  }
+  h2.deacons.right-aligned {
+  	margin-left: 143px;
+  }
 
 .sermon-list-post {
   border-bottom: 2px solid #cccccc;
@@ -340,7 +352,7 @@
     margin: 0 0 20px 40px;
     text-transform: uppercase;
     font-weight: normal;
-    font-size: 12px; }
+    font-size: 13px; }
   .sidebar .sidebar-page-listing {
     list-style: none; }
     .sidebar .sidebar-page-listing li {
@@ -394,6 +406,9 @@
   padding: 8px;
   margin: 5px 0px;
   width: 100px; }
+.superscript-footnote {
+  	font-size: 11px;
+  }
 
 body {
   font-family: "eau_sans_book_osf", "Open Sans", sans-serif, Arial;
@@ -425,6 +440,14 @@ table, tr, td {
   color: #cccccc !important;
   pointer-events: none;
   cursor: default; }
+
+a.email-link 
+{
+	background-image: url('images/icon_email.png');
+	background-repeat: no-repeat;
+	background-position: 95% -3px;
+	padding-right: 30px;
+}
 
 h1 {
   font-weight: normal;

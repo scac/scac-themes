@@ -27,10 +27,10 @@ jQuery(function ($) {
   /*** Navbar Hovers ***/
   $('.nav-item').hover(
     function () {
-      $(this).children("a").children("span").addClass("nav_hover");
+      $(this).children("a").parent().addClass("nav_hover");
     },
     function () {
-      $(this).children("a").children("span").removeClass("nav_hover");
+      $(this).children("a").parent().removeClass("nav_hover");
     }
   );
 

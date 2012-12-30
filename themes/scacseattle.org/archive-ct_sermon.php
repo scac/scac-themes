@@ -15,7 +15,7 @@ get_header(); ?>
 
 
         <header class="page-header">
-          <h1 class="page-title">Sermons @ SCAC</h1>
+          <h1 class="page-title">Sermons</h1>
 
         </header><!-- .page-header -->
 
