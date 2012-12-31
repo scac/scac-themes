@@ -11,11 +11,11 @@
   <div class="content-from-container clearfix">
     <div class="col-left">
       <?php //echo apply_filters('the_content', '[contact-form-7 id="916" title="Get Connected - TG"]'); ?>
-      <div class="wpcf7" id="wpcf7-f916-p152-o1"><form action="/scacseattle.org/ministries/trinitarian-groups/#wpcf7-f916-p152-o1" method="post" class="wpcf7-form">
+      <div class="wpcf7" id="wpcf7-f860-p152-o1"><form action="/scacseattle.org/ministries/trinitarian-groups/#wpcf7-f860-p152-o1" method="post" class="wpcf7-form">
       <div style="display: none;">
-      <input type="hidden" name="_wpcf7" value="916" />
+      <input type="hidden" name="_wpcf7" value="860" />
       <input type="hidden" name="_wpcf7_version" value="3.3.2" />
-      <input type="hidden" name="_wpcf7_unit_tag" value="wpcf7-f916-p152-o1" />
+      <input type="hidden" name="_wpcf7_unit_tag" value="wpcf7-f860-p152-o1" />
       <input type="hidden" name="_wpnonce" value="63add9607b" />
       </div>
       <h5>Get Connected</h5>
