@@ -26,7 +26,7 @@
 
   <div class="sermon-info-container clearfix">
     <div class="sermon-short-desc">
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas posuere euismod odio, eu imperdiet lectus ullamcorper vitae. Morbi quam lacus, malesuada suscipit varius sit amet, bibendum eget leo. Donec ut tellus ligula, id fermentum nisi. Mauris dolor sapien, accumsan nec blandit id, tempus in ipsum. In hac habitasse platea dictumst. In luctus neque metus, a sollicitudin enim. Fusce et leo mi. Quisque blandit, nisl sit amet fringilla hendrerit, tellus nibh venenatis purus, non consequat nibh lorem ac arcu. Pellentesque pulvinar, ante a bibendum aliquet, orci massa solli...
+      <?php the_excerpt(); ?>
     </div>
     <div class="sermon-info">
       <?php the_time('M j, Y'); ?>
