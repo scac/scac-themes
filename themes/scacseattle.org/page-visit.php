@@ -27,8 +27,16 @@ get_header(); ?>
 
 		</div>
 		<div class="col-one-third">
+      <p>
+        <b>Service Times</b>
+        <br />
+        8:30am - Cantonese Service 1<br />
+        10:00am - English Ministries Service<br />
+        11:30am - Cantonese Service 2
+      </p>
 			<p>
-        <b>Seattle Chinese Alliance Church</b><br />
+        <b>Address</b><br />
+        Seattle Chinese Alliance Church<br />
 				2803 S. Orcas St.<br />
 				Seattle, WA 98108
 			</p>
@@ -42,13 +50,6 @@ get_header(); ?>
 				(206) 725-0771 ext. 11<br />
 				<a href="mailto:bettywong@scacseattle.org" class="email-link">Betty Wong</a>
 			</p>
-      <p>
-        <b>Service Times</b>
-        <br />
-        8:30am - Cantonese Service 1<br />
-        10:00am - English Ministries Service<br />
-        11:30am - Cantonese Service 2
-      </p>
 		</div>
 		<div class="clear"></div>
 
