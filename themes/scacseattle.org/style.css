@@ -132,7 +132,8 @@
       margin: 0px;
       padding: 0px; }
       .site-footer .links-container ul .listing-headers {
-        float: left; }
+        float: left;
+        min-width: 100px; }
       .site-footer .links-container ul li {
         margin: 0 20px 0px 0; }
         .site-footer .links-container ul li .footer-listings li a {
@@ -234,7 +235,7 @@
 .col-one-third {
   width: 20%;
   float: left;
-  margin-top: -1em; }
+  margin-top: 10px; }
 
 .page-church {
   width: 100%; }
@@ -248,6 +249,10 @@
   .page-church h2 {
     font-size: 16px;
     font-weight: normal; }
+  .page-church .leadership-table td {
+    vertical-align: top; }
+  .page-church .leadership-table h4 {
+    margin-top: 0px !important; }
 
 .sermon-list-post {
   border-bottom: 2px solid #cccccc;
@@ -335,7 +340,7 @@
   float: left; }
 
 .sidebar {
-  margin: 30px 0 0 0; }
+  margin: 40px 0 0 0; }
   .sidebar .sidebar-title {
     margin: 0 0 20px 40px;
     text-transform: uppercase;
@@ -397,8 +402,8 @@
 
 body {
   font-family: "eau_sans_book_osf", "Open Sans", sans-serif, Arial;
-  font-size: 12px;
-  line-height: 16px;
+  font-size: 13px;
+  line-height: 17px;
   margin: 0px;
   color: #444444; }
 

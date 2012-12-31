@@ -1,7 +1,7 @@
 
 <div class="sidebar sidebar-right">
   <div class="col-right">
-    <div class="sidebar sidebar-church">
+    <div class="sidebar-ministries">
       <h3 class="sidebar-title"><a href="<?php echo home_url("/ministries/"); ?>">Ministries</a></h3>
       <ul class="sidebar-page-listing">
         <?php 
