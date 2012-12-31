@@ -42,7 +42,7 @@
             ?>
           </ul>
         </li>
-        <li class="listing-headers">
+<!--        <li class="listing-headers">
           <a href="<?php echo home_url("/sermons/"); ?>" class="footer-main-link">Sermons</a>
           <ul class="footer-listings">
             <?php 
@@ -58,7 +58,7 @@
               endfor;
             ?>
           </ul>
-        </li>
+        </li> -->
       </ul>
 
     </div>
