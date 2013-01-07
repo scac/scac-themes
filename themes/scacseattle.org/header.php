@@ -58,7 +58,7 @@
           <h2 class="site-title">
         <?php endif; ?>
 
-        <a href="<?php echo home_url( '/' ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><div class="site-name-top">Seattle Chinese</div><div class="site-name-bottom">Alliance Church</div></a></h1>
+        <a href="<?php echo home_url( '/' ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><div class="site-name-top"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/header2.png"></div></a></h1>
         
         <?php if(is_home() || is_page('Homepage')) : ?>
           </h1>

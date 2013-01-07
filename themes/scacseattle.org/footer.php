@@ -42,6 +42,10 @@
             ?>
           </ul>
         </li>
+        <li class="listing-headers">
+          <a href="<?php echo home_url("/sermons"); ?>" class="footer-main-link">Sermons
+          </a>
+        </li>
 <!--        <li class="listing-headers">
           <a href="<?php echo home_url("/sermons/"); ?>" class="footer-main-link">Sermons</a>
           <ul class="footer-listings">

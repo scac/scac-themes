@@ -31,7 +31,7 @@ get_header(); ?>
         <b>Service Times</b>
         <br />
         8:30am - Cantonese Service 1<br />
-        10:00am - English Ministries Service<br />
+        10:00am - English Service<br />
         11:30am - Cantonese Service 2
       </p>
 			<p>

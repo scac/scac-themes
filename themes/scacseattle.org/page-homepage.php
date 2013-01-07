@@ -28,7 +28,7 @@ get_header(); ?>
                   </tr>
                   <tr>
                     <td class="service-time">10:00am</td>
-                    <td>English Ministries Service</td>
+                    <td>English Service</td>
                   </tr>
                   <tr>
                     <td class="service-time">11:30am</td>

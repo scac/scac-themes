@@ -102,16 +102,16 @@
             text-transform: uppercase;
             color: black;
             font-size: 16px; }
-            .primary-nav-container #primary-nav .navbar .nav-item-td .nav-item a .nav_hover, .primary-nav-container #primary-nav .navbar .nav-item-td .nav-item a .active_tab {
+            .primary-nav-container #primary-nav .navbar .nav-item a .nav_hover, .primary-nav-container #primary-nav .navbar .nav-item a .active_tab {
               position: absolute;
               display: block;
               width: 100%;
               top: -1px;
               left: 0px; }
-            .primary-nav-container #primary-nav .navbar .nav-item-td .nav-item.active_tab {
-              background-color: #77991f; }
-            .primary-nav-container #primary-nav .navbar .nav-item-td .nav-item.nav_hover {
-              background-color: #B8C686; }
+              .primary-nav-container #primary-nav .navbar .nav-item a .active_tab {
+              border-top: 7px solid #77991f; }
+            .primary-nav-container #primary-nav .navbar .nav-item .nav_hover {
+              border-top: 7px solid #B8C686; }
 
 .site-footer {
   position: relative;
@@ -255,10 +255,10 @@
   	font-weight: bold;
   }
   h2.pastors.right-aligned {
-  	margin-left: 147px;
+  	margin-left: 135px;
   }
   h2.deacons.right-aligned {
-  	margin-left: 147px;
+  	margin-left: 143px;
   }
 
 .sermon-list-post {
@@ -327,7 +327,7 @@
 .page .entry-content h2, .page .entry-content h3, .page .entry-content h4, .page .entry-content h5, .post .entry-content h2, .post .entry-content h3, .post .entry-content h4, .post .entry-content h5 {
   color: #77991f; }
 .page .entry-content h4, .post .entry-content h4 {
-  margin: 15px 0 0px; }
+  margin: 0px 0 0px; }
 .page .entry-content p, .post .entry-content p {
   margin: 0.5em 0 1em; }
 .page blockquote, .post blockquote {
@@ -379,15 +379,15 @@
 
 .ministry-page .col-left {
   float: left;
-  width: 40%; }
+  width: 31%; }
 .ministry-page .col-right {
   float: right;
-  width: 60%; }
+  width: 69%; }
 .ministry-page .wpcf7 h5 {
   margin: 1em 0 0 0;
   font-size: 14px; }
 .ministry-page .wpcf7 .ministry-contact-input select {
-  width: 200px;
+  width: 180px;
   height: 35px;
   background: #efefef;
   border: 0;
@@ -411,6 +411,7 @@
   }
 
 body {
+  background-color: #ECEADF;
   font-family: "eau_sans_book_osf", "Open Sans", sans-serif, Arial;
   font-size: 13px;
   line-height: 16px;
@@ -422,6 +423,8 @@ a {
   color: #77991f; }
 
 .container {
+  background-color: #FFF;
+  padding: 20px;
   width: 980px;
   margin: 0 auto; }
 
