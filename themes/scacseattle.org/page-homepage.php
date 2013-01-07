@@ -82,19 +82,22 @@ get_header(); ?>
                   if(isset($img)){
                     echo '<img src="' . $img->imageURL . '" alt="' . $img->alttext . '" class="announcement-img">';  
                   }else{
+                    global $ai1ec_calendar_helper;
 
 
-                    $args = array( 'post_type' => 'announcement', 'posts_per_page' => 10 );
-                    $loop = new WP_Query( $args );
-                    if($loop->have_posts()) : 
-                      while ( $loop->have_posts() ) : $loop->the_post();
+
+                    
+                    $events = $ai1ec_calendar_helper->get_events_relative_to(gmmktime(), 3);
+
+                    if( count($events) > 0 ) : foreach($events["events"] as $event) : 
                     ?>
                     <div class="announcement-item">
-                      <span class="date"><?php the_time("n/d"); ?></span>
+                      <span class="date"><?php echo get_the_time("n/d/Y", $event->post); ?></span>
                       <span class="black-dot">&bull;</span>
-                      <span class="a-title"><?php the_title(); ?> </span>
+                      <span class="a-title"><?php echo $event->post->post_title; ?> </span>
                     </div>
-                    <?php endwhile; ?>
+                    <?php endforeach; ?>
+                    
                     <?php else: ?>
                       <div class="announcement-item">
                         Check again in, announcements coming!
