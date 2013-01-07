@@ -327,6 +327,8 @@
 .page .entry-content h2, .page .entry-content h3, .page .entry-content h4, .page .entry-content h5, .post .entry-content h2, .post .entry-content h3, .post .entry-content h4, .post .entry-content h5 {
   color: #77991f; }
 .page .entry-content h4, .post .entry-content h4 {
+  margin: 10px 0 0px; }
+.page .post .entry-content .leadership-table h4, .page .entry-content .leadership-table h4 {
   margin: 0px 0 0px; }
 .page .entry-content p, .post .entry-content p {
   margin: 0.5em 0 1em; }
