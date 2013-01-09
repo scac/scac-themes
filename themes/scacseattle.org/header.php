@@ -10,6 +10,8 @@
 ?><!DOCTYPE html>
 <html <?php language_attributes(); ?>>
 <head>
+<!-- Favicon -->
+<link rel="icon" type="image/png" href="<?php echo get_stylesheet_directory_uri(); ?>/images/faviconSCAC.ico">
 <meta charset="<?php bloginfo( 'charset' ); ?>" />
 <meta name="viewport" content="width=device-width" />
 <title><?php

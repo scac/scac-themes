@@ -32,7 +32,7 @@
   height: 65px; }
 
 .site-header {
-  margin: 15px 0 0 0; }
+  margin: 0; }
 
 .site-title {
   font-size: 20px;
@@ -106,7 +106,7 @@
               position: absolute;
               display: block;
               width: 100%;
-              top: -1px;
+              top: 0px;
               left: 0px; }
               .primary-nav-container #primary-nav .navbar .nav-item a .active_tab {
               border-top: 7px solid #77991f; }
@@ -396,6 +396,7 @@
   margin: 5px 0px; }
 .ministry-page .wpcf7 .ministry-contact-input input[type='text'] {
   background: #efefef;
+  color: #AAAAAA;
   border: 0;
   padding: 10px;
   margin: 5px 0px;
@@ -426,7 +427,7 @@ a {
 
 .container {
   background-color: #FFF;
-  padding: 20px;
+  padding: 0px 20px 0 20px;
   width: 980px;
   margin: 0 auto; }
 
