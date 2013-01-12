@@ -32,7 +32,8 @@
                 'child_of' => $page->ID,
                 'post_status' => 'publish',
                 'post_type' => 'page',
-                'sort_order' => 'DESC',
+				'sort_column' => 'menu_order',
+                'sort_order' => 'ASC',
               );
 
               $pages = get_pages($args);
