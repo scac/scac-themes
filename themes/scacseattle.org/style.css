@@ -223,7 +223,8 @@
   .map-directions form input {
     padding: 7px;
     border: 1px solid #cccccc;
-    background: #eeeeee; }
+    background: #eeeeee;
+    color: #AAA }
     .map-directions form input[type='text'] {
       width: 290px; }
     .map-directions form input[type='submit'] {
@@ -308,6 +309,9 @@
 
 .social.sermons ul li {
   list-style-type: none; }
+  
+.sermon-speaker {
+  float: right; }
 
 .post-divider {
   width: 100%;
@@ -393,11 +397,17 @@
   margin-right: 20px; }
 .page-church .one-third {
   float: left; }
+.page-church .one-third p, .page-church .col-thirds p {
+	margin-top: 0px; }
 .page-church .col-thirds {
   float: left;
   margin-right: 20px; }
 .page-church .col-thirds.last {
   margin-right: 0px; }
+.page-church p {
+  font-size: 14px; }
+.page-church h4 {
+  font-size: 15px; }
 .ministry-page .wpcf7 h5 {
   margin: 1em 0 0 0;
   font-size: 14px; }

@@ -66,17 +66,32 @@ get_header(); ?>
                     ?>
                       <div class="latest-sermon-img"><img src="<?php echo $img->imageURL; ?>" style="width: 300px"></div>
                     <?php endif; ?>
-                  <div class="latest-sermon-title"><a href="<?php echo get_permalink($post); ?>"><?php echo get_the_title($post); ?></a></div>
-                  <div class="latset-sermon-date"><?php echo get_the_time('M j, Y', $post); ?></div>
+                  <!-- <div class="latest-sermon-title"><a href="<?php echo get_permalink($post); ?>"><?php echo get_the_title($post); ?></a></div>
+                  <div class="latset-sermon-date"><?php echo get_the_time('M j, Y', $post); ?></div> -->
                 </div>
               <?php else : ?>
                 Latest sermon coming soon! Check often!
               <?php endif; ?>
             </td>
             <td class="info-box info-cell">
+              <div class="announcement-item">
+                <span class="date">February 22-24, 2013</span>
+                <span class="black-dot">&bull;</span>
+                <span class="a-title">Justice Conference</span>
+              </div>
+              <div class="announcement-item">
+                <span class="date">March 22-24, 2013</span>
+                <span class="black-dot">&bull;</span>
+                <span class="a-title">TheFoyer Retreat</span>
+              </div>
+              <div class="announcement-item">
+                <span class="date">March 24, 2013</span>
+                <span class="black-dot">&bull;</span>
+                <span class="a-title">Fasting</span>
+              </div>
               <?php
                 global $nggdb;
-                if(isset($nggdb)): 
+                /* if(isset($nggdb)): 
                   $img = array_shift($nggdb->get_gallery('announcements-images')); //only take the first image anyway
 
                   if(isset($img)){
@@ -87,7 +102,7 @@ get_header(); ?>
 
 
                     
-                    $events = $ai1ec_calendar_helper->get_events_relative_to(gmmktime(), 3);
+              //      $events = $ai1ec_calendar_helper->get_events_relative_to(gmmktime(), 3);
 
                     if( count($events) > 0 ) : foreach($events["events"] as $event) : 
                     ?>
@@ -106,7 +121,7 @@ get_header(); ?>
 
                   }
                   
-                endif; 
+                endif;  */
 
               ?>
             </td>
