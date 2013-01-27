@@ -64,10 +64,10 @@ get_header(); ?>
                     if(isset($nggdb)):
                       $img = $nggdb->find_image($term->slug);
                     ?>
-                      <div class="latest-sermon-img"><img src="<?php echo $img->imageURL; ?>" style="width: 300px"></div>
+                      <!-- <div class="latest-sermon-img"><img src="<?php echo $img->imageURL; ?>" style="width: 300px"></div> -->
                     <?php endif; ?>
-                  <!-- <div class="latest-sermon-title"><a href="<?php echo get_permalink($post); ?>"><?php echo get_the_title($post); ?></a></div>
-                  <div class="latset-sermon-date"><?php echo get_the_time('M j, Y', $post); ?></div> -->
+                  <div class="latest-sermon-title"><a href="<?php echo get_permalink($post); ?>"><?php echo get_the_title($post); ?></a></div>
+                  <div class="latset-sermon-date"><?php echo get_the_time('M j, Y', $post); ?></div>
                 </div>
               <?php else : ?>
                 Latest sermon coming soon! Check often!

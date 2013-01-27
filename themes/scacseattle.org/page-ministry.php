@@ -85,7 +85,7 @@ get_header(); ?>
                 <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/thefoyer.png" />
               </a>
               <a href="/ministries/adults-ministries/">
-                <p class="ministry-photo-caption">TheFoyer</p>
+                <p class="ministry-photo-caption">TheFoyer (Adults)</p>
               </a>
             </div>
             <div class="col-thirds">
