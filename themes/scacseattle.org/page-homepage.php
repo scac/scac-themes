@@ -89,6 +89,21 @@ get_header(); ?>
                 <span class="black-dot">&bull;</span>
                 <span class="a-title">Fasting</span>
               </div>
+              <div class="announcement-item">
+                <span class="date">March 29, 2013</span>
+                <span class="black-dot">&bull;</span>
+                <span class="a-title">Good Friday Service</span>
+              </div>
+              <div class="announcement-item">
+                <span class="date">March 30, 2013</span>
+                <span class="black-dot">&bull;</span>
+                <span class="a-title">Beacon Hill Easter Egg Hunt</span>
+              </div>
+              <div class="announcement-item">
+                <span class="date">March 31, 2013</span>
+                <span class="black-dot">&bull;</span>
+                <span class="a-title">Baptismal Service</span>
+              </div>
               <?php
                 global $nggdb;
                 /* if(isset($nggdb)): 
