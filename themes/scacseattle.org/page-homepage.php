@@ -67,7 +67,9 @@ get_header(); ?>
                       <!-- <div class="latest-sermon-img"><img src="<?php echo $img->imageURL; ?>" style="width: 300px"></div> -->
                     <?php endif; ?>
                   <div class="latest-sermon-title"><a href="<?php echo get_permalink($post); ?>"><?php echo get_the_title($post); ?></a></div>
+                  <div><?php echo get_the_term_list($post->ID, 'sermon_speaker'); ?></div>
                   <div class="latset-sermon-date"><?php echo get_the_time('M j, Y', $post); ?></div>
+                  <div><?php the_excerpt(); ?></div>
                 </div>
               <?php else : ?>
                 Latest sermon coming soon! Check often!
