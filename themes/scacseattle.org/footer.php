@@ -49,19 +49,20 @@
 <!--        <li class="listing-headers">
           <a href="<?php echo home_url("/sermons/"); ?>" class="footer-main-link">Sermons</a>
           <ul class="footer-listings">
-            <?php 
+-->
+            <!-- <?php 
               $taxonomy = 'sermon_series';
               $terms = get_terms($taxonomy);
               for($i=0;$i < 5; $i++) :
                 $term = $terms[$i];
-            ?>
-                <li class="page_item <?php echo ($global_term->slug == $term->slug ? "current_page_item" : ""); ?>">
-                  <a href="<?php echo get_term_link($term); ?>"><span class="active-box"></span><?php echo $term->name; ?></a>
-                </li>
-            <?php
+            ?> -->
+<!--                <li class="page_item <?php echo ($global_term->slug == $term->slug ? "current_page_item" : ""); ?>">
+                  <a href="<?php //echo get_term_link($term); ?>"><span class="active-box"></span><?php echo $term->name; ?></a>
+                </li> -->
+            <!-- <?php
               endfor;
-            ?>
-          </ul>
+            ?> -->
+          <!-- </ul>
         </li> -->
       </ul>
 

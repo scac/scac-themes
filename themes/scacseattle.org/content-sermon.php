@@ -13,7 +13,7 @@
       <?php if (get_post_type() == 'ct_sermon') : ?>
         <span class="sermon-speaker">
           <?php echo get_the_term_list($post->ID, 'sermon_speaker'); ?>,
-        </span>
+        </span><br />
       <?php endif; ?>
 
       <?php the_time('M j, Y'); ?>
