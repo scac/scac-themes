@@ -47,5 +47,6 @@ get_header(); ?>
 
       </div><!-- #content .site-content -->
     </div><!-- #primary .content-area -->
+	<br class="clear" />
 <?php get_sidebar('ministries'); ?>
 <?php get_footer(); ?>

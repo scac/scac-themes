@@ -14,98 +14,34 @@ get_header(); ?>
 
         <table class="info-area">
           <tr class="info-row">
-            <td class="info-header info-cell"><div class="header">Sunday Service</div></td>
-            <td class="info-header info-cell"><div class="header">Latest Sermon</div></td>
-            <td class="info-header info-cell"><div class="header">Announcements</div></td>
+            <td class="info-header info-cell announcement-cell"><div class="header">Announcements</div></td>
+            <td class="info-header info-cell"><div class="header">Latest Sermons</div></td>
           </tr>
           <tr class="info-row">
-            <td class="info-box info-cell">
-              <div class="info-cell-container">
-                <table>
-                  <tr>
-                    <td class="service-time">8:30am</td>
-                    <td>Cantonese Service 1</td>
-                  </tr>
-                  <tr>
-                    <td class="service-time">10:00am</td>
-                    <td>English Service</td>
-                  </tr>
-                  <tr>
-                    <td class="service-time">11:30am</td>
-                    <td>Cantonese Service 2</td>
-                  </tr>
-                </table>
-
-                <p>
-                  2803 S. Orcas St.
-                  <br/>
-                  Seattle, WA 98108
-                </p>
-
-                <a href="<?php echo home_url("/")?>visit/">Directions</a>
+            <td class="info-box announcement-cell">
+              <div class="announcement-item">
+				<table class="announcement-table">
+					<tr class="announcement-row">
+						<td class="announcement-img-cell"><img src="http://english.scacseattle.org/wp-content/themes/scacseattle.org/images/announcement_blank.png"></td>
+						<td class="announcement-table-cell">
+							<div class="title">TheFoyer Retreat</div>
+							<div class="info">March 22-24, 2013</div>
+							<div class="desc">The young adults at SCAC will be going to Seabrook, WA this year for a weekend retreat. Our speaker, Pete Forras will be talking about relationships and finances in the Kingdom of God Cost.: $100 if you register before March 8th ($75 for college students); $130 if you register March 9th-21st ($100 for college students). Click <a href="https://docs.google.com/spreadsheet/viewform?fromEmail=true&formkey=dERvbVB2aW42V0xSTHUxS0w2bWZ6bFE6MQ">here</a> to register.</div></td>
+					</tr>
+          <tr class="announcement-row">
+            <td class="announcement-img-cell">
+              <img src="http://english.scacseattle.org/wp-content/themes/scacseattle.org/images/announcement_blank.png">
+            </td>
+            <td class="announcement-table-cell">
+              <div class="title">Baptism &amp; Membership Class</div>
+              <div class="info">March 31, 2013 - 1:30pm</div>
+              <div class="desc">
+                Our next baptismal service will be on Easter Sunday (March 31st) at 1:30pm. If you are interested in getting baptized or becoming a member at SCAC, please contact <a href="mailto:pollywong@scac.org">Polly Wong</a> for an application.  Baptism and Membership class will be held on March 17th at 1pm.
               </div>
             </td>
-            <td class="info-box info-cell">
-              <?php
-                $args = array(
-                  'post_type' => 'ct_sermon',
-                  'order' => 'DESC',
-                  'numberposts' => 1
-                );
-                $post = array_shift(get_posts($args));
-
-                if(isset($post)) :                  
-                  $term = array_shift(wp_get_post_terms($post->ID, 'sermon_series'));
-
-              ?>
-                <div class="info-cell-container">
-                  <?php 
-                    global $nggdb;
-                    if(isset($nggdb)):
-                      $img = $nggdb->find_image($term->slug);
-                    ?>
-                      <!-- <div class="latest-sermon-img"><img src="<?php echo $img->imageURL; ?>" style="width: 300px"></div> -->
-                    <?php endif; ?>
-                  <div class="latest-sermon-title"><a href="<?php echo get_permalink($post); ?>"><?php echo get_the_title($post); ?></a></div>
-                  <div><?php echo get_the_term_list($post->ID, 'sermon_speaker'); ?></div>
-                  <div class="latset-sermon-date"><?php echo get_the_time('M j, Y', $post); ?></div>
-                  <div><?php the_excerpt(); ?></div>
-                </div>
-              <?php else : ?>
-                Latest sermon coming soon! Check often!
-              <?php endif; ?>
-            </td>
-            <td class="info-box info-cell">
-              <div class="announcement-item">
-                <span class="date">February 22-24, 2013</span>
-                <span class="black-dot">&bull;</span>
-                <span class="a-title">Justice Conference</span>
+          </tr>
+				</table>
               </div>
-              <div class="announcement-item">
-                <span class="date">March 22-24, 2013</span>
-                <span class="black-dot">&bull;</span>
-                <span class="a-title">TheFoyer Retreat</span>
-              </div>
-              <div class="announcement-item">
-                <span class="date">March 24 - March 31, 2013</span>
-                <span class="black-dot">&bull;</span>
-                <span class="a-title">Fasting</span>
-              </div>
-              <div class="announcement-item">
-                <span class="date">March 29, 2013</span>
-                <span class="black-dot">&bull;</span>
-                <span class="a-title">Good Friday Service</span>
-              </div>
-              <!-- <div class="announcement-item">
-                <span class="date">March 30, 2013</span>
-                <span class="black-dot">&bull;</span>
-                <span class="a-title">Beacon Hill Easter Egg Hunt</span>
-              </div>
-              <div class="announcement-item">
-                <span class="date">March 31, 2013</span>
-                <span class="black-dot">&bull;</span>
-                <span class="a-title">Baptismal Service</span>
-              </div> -->
               <?php
                 global $nggdb;
                 /* if(isset($nggdb)): 
@@ -141,6 +77,32 @@ get_header(); ?>
                 endif;  */
 
               ?>
+            </td>
+            <td class="info-box info-cell">
+              <?php
+                $args = array(
+                  'post_type' => 'ct_sermon',
+                  'order' => 'DESC',
+                  'numberposts' => 4
+                );
+                $posts = get_posts($args);
+				$post = array_shift($posts);
+                if(isset($posts)) :
+
+              ?>
+                <div class="first-sermon-container">
+                  <div class="latest-sermon-title"><a href="<?php echo get_permalink($post); ?>"><?php echo get_the_title($post); ?></a></div>
+                  <div class="latest-sermon-date"><?php echo array_shift(wp_get_object_terms($post->ID, 'sermon_speaker'))->name; ?> | <?php echo get_the_time('M j, Y', $post); ?></div>
+                </div>
+				<?php foreach( $posts as $sermon ) { ?>
+				  <div class="sermon-container">
+					<div class="latest-sermon-title"><a href="<?php echo get_permalink($sermon); ?>"><?php echo get_the_title($sermon); ?></a></div>
+					<div class="latest-sermon-date"><?php echo array_shift(wp_get_object_terms($sermon->ID, 'sermon_speaker'))->name; ?> | <?php echo get_the_time('M j, Y', $sermon); ?></div>
+				  </div>
+				<?php } ?>
+              <?php else : ?>
+                Latest sermon coming soon! Check often!
+              <?php endif; ?>
             </td>
           </tr>
         </table>
