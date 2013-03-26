@@ -22,24 +22,29 @@ get_header(); ?>
               <div class="announcement-item">
 				<table class="announcement-table">
 					<tr class="announcement-row">
-						<td class="announcement-img-cell"><img src="http://english.scacseattle.org/wp-content/themes/scacseattle.org/images/announcement_blank.png"></td>
+						<td class="announcement-img-cell"><img src="http://english.scacseattle.org/wp-content/themes/scacseattle.org/images/thiog_announcement.jpg"></td>
 						<td class="announcement-table-cell">
-							<div class="title">TheFoyer Retreat</div>
-							<div class="info">March 22-24, 2013</div>
-							<div class="desc">The young adults at SCAC will be going to Seabrook, WA this year for a weekend retreat. Our speaker, Pete Forras will be talking about relationships and finances in the Kingdom of God Cost.: $100 if you register before March 8th ($75 for college students); $130 if you register March 9th-21st ($100 for college students). Click <a href="https://docs.google.com/spreadsheet/viewform?fromEmail=true&formkey=dERvbVB2aW42V0xSTHUxS0w2bWZ6bFE6MQ">here</a> to register.</div></td>
+							<div class="title">Guest Speaker: Margo Day, Vice President of U.S. Education at Microsoft</div>
+							<div class="info">March 24, 2013</div>
+							<div class="desc"> With education at the center of her passions, Margo recently returned from a one year personal leave of absence where she used the time to focus on raising funds and awareness for the Kenya Child Protection and Education Project, partnering with <a href="http://www.worldvision.org/m/sponsor-a-child/?open&campaign=11935117&cmp=KNC-11935117">World Vision</a>. This <a href="http://margoday.wordpress.com/">project</a> is positively affecting the lives of 17,000 children in 5 areas in the North Rift Valley of Kenya.</div>
+						</td>
 					</tr>
-          <tr class="announcement-row">
-            <td class="announcement-img-cell">
-              <img src="http://english.scacseattle.org/wp-content/themes/scacseattle.org/images/announcement_blank.png">
-            </td>
-            <td class="announcement-table-cell">
-              <div class="title">Baptism &amp; Membership Class</div>
-              <div class="info">March 31, 2013 - 1:30pm</div>
-              <div class="desc">
-                Our next baptismal service will be on Easter Sunday (March 31st) at 1:30pm. If you are interested in getting baptized or becoming a member at SCAC, please contact <a href="mailto:pollywong@scac.org">Polly Wong</a> for an application.  Baptism and Membership class will be held on March 17th at 1pm.
-              </div>
-            </td>
-          </tr>
+					<tr class="announcement-row">
+						<td class="announcement-img-cell"><img src="http://english.scacseattle.org/wp-content/themes/scacseattle.org/images/baptism.jpg"></td>
+						<td class="announcement-table-cell">
+							<div class="title">Baptism &amp; Membership Class</div>
+							<div class="info">March 31, 2013 - 1:30pm</div>
+							<div class="desc">Our next baptismal service will be on Easter Sunday (March 31st) at 1:30pm. If you are interested in getting baptized or becoming a member at SCAC, please contact <a href="mailto:pollywong@scac.org">Polly Wong</a> for an application.  Baptism and Membership class will be held on March 17th at 1pm.</div>
+						</td>
+					</tr>
+					<tr class="announcement-row">
+						<td class="announcement-img-cell"><img src="http://english.scacseattle.org/wp-content/themes/scacseattle.org/images/new-here-web.jpg"></td>
+						<td class="announcement-table-cell">
+							<div class="title">Newcomer Luncheon</div>
+							<div class="info">April 21, 2013 - 11:45am - 12:30pm</div>
+							<div class="desc">Have you been attending SCAC regularly for the past several months, and would like to get to know us a little better?  We'd love to invite you to lunch here at SCAC. Get to meet some of us in leadership, ask any questions you might have, and share a nice meal with us!</div>
+						</td>
+					</tr>
 				</table>
               </div>
               <?php
